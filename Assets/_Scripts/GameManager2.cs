@@ -36,5 +36,5 @@ public class GameManager2 : MonoBehaviour
         IndexPregunta = IndexPregunta + 1;
     }
 
-
+    //probando github
 }
