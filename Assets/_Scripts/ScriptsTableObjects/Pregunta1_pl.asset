@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Pregunta1_pl
   m_EditorClassIdentifier: 
   text_pregunta: Que es PLSQL
-  img_pregunta: {fileID: 0}
+  spr_pregunta: {fileID: 0}
   text_alternativas:
   - text_alternativa: A
     Is_correct: 1

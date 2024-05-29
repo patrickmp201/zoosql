@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   text_pregunta: " Manny necesita encontrar todos los animales que son mam\xEDferos.
     \xBFQu\xE9 consulta deber\xEDa usar?"
-  img_pregunta: {fileID: 0}
+  spr_pregunta: {fileID: 21300000, guid: 25021f052facc184c9eb3a4313ff0bcb, type: 3}
   text_alternativas:
   - text_alternativa: "\u03C0_tipo='Mam\xEDfero' (Animales)"
     Is_correct: 0

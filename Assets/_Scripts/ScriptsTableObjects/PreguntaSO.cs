@@ -7,7 +7,7 @@ using System;
 public class PreguntaSO : ScriptableObject
 {
     public string text_pregunta;
-    public Image img_pregunta;
+    public Sprite spr_pregunta;
     public Alternativa[] text_alternativas;
     public Dificultad dificultad;
     public Tema tema;

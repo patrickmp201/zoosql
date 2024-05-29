@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   text_pregunta: "Manny quiere encontrar a todos los animales que est\xE1n en la
     jaula n\xFAmero 3. \xBFQu\xE9 consulta deber\xEDa usar?"
-  img_pregunta: {fileID: 0}
+  spr_pregunta: {fileID: 21300000, guid: 2fbbec24ead9bf84d90e227dab1fe561, type: 3}
   text_alternativas:
   - text_alternativa: "\u03C0_jaula=3 (Animales)"
     Is_correct: 0
