@@ -1,12 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 
 public class GameManager2 : MonoBehaviour
 {
     public int IndexPregunta = 0;
     public List<PreguntaSO> Preguntas;
+    [SerializeField] private Sprite m_correctAnswerSprite;
+    [SerializeField] private Sprite m_incorrectAnswerSprite;
+    private Button m_button; 
 
 
     private void Start()
