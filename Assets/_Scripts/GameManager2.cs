@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -10,7 +11,8 @@ public class GameManager2 : MonoBehaviour
     public List<PreguntaSO> Preguntas;
     [SerializeField] private Sprite m_correctAnswerSprite;
     [SerializeField] private Sprite m_incorrectAnswerSprite;
-    private Button m_button; 
+    [SerializeField] private List<GameObject> m_pointsBar;
+    [SerializeField] private List<Button> m_buttons;
 
 
     private void Start()
@@ -30,14 +32,30 @@ public class GameManager2 : MonoBehaviour
         // Aquí puedes añadir la lógica para iniciar el juego con la lista de preguntas seleccionadas
         Debug.Log(Preguntas.Count);
         UIManager.Instance.MostrarPregunta(Preguntas[IndexPregunta]);
-
-        IndexPregunta = IndexPregunta + 1;
     }
 
-    public void SiguientePregunta()
+    public void SiguientePregunta(int indexButton)
     {
-        UIManager.Instance.MostrarPregunta(Preguntas[IndexPregunta]);
+        m_pointsBar[IndexPregunta].SetActive(true);
+        
+        
+        if (Preguntas[IndexPregunta].text_alternativas[indexButton].Is_correct)
+        {
+            m_pointsBar[IndexPregunta].GetComponent<Image>().sprite = m_correctAnswerSprite;
+        }
+        else
+        {
+            m_pointsBar[IndexPregunta].GetComponent<Image>().sprite = m_incorrectAnswerSprite;
+        }
+        
         IndexPregunta = IndexPregunta + 1;
+        
+        if (IndexPregunta >= Preguntas.Count - 1)
+        {
+            IndexPregunta = Preguntas.Count - 1;
+        }
+        
+        UIManager.Instance.MostrarPregunta(Preguntas[IndexPregunta]);
     }
 
     //probando github
