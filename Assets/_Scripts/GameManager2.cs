@@ -36,8 +36,6 @@ public class GameManager2 : MonoBehaviour
 
     public void SiguientePregunta(int indexButton)
     {
-        m_pointsBar[IndexPregunta].SetActive(true);
-        
         
         if (Preguntas[IndexPregunta].text_alternativas[indexButton].Is_correct)
         {
