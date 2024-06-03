@@ -38,36 +38,4 @@ public class LogicaCambiarScena : MonoBehaviour
     }
 }
 
-//using System.Collections;
-//using System.Collections.Generic;
-//using UnityEngine;
-//using UnityEngine.SceneManagement;
 
-//public class LogicaCambiarScena : MonoBehaviour
-//{
-//    public bool pasarEscenas;
-//    //public bool GameStar;
-//    public int indiceEscenas;
-
-//    void Update()
-//    {
-//        if (Input.GetMouseButtonDown(1)) // 1 representa el botón derecho del mouse
-//        {
-//            CambiarNivel(indiceEscenas);
-
-//            Debug.Log("Entro Indice");
-//        }
-
-//        if (pasarEscenas)
-//        {
-//            CambiarNivel(indiceEscenas);
-//            Debug.Log("Entro Escena");
-//        }
-//    }
-
-//    public void CambiarNivel(int indice)
-//    {
-//        SceneManager.LoadScene(indice);
-
-//    }
-//}
