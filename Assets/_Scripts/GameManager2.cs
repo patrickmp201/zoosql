@@ -13,6 +13,8 @@ public class GameManager2 : MonoBehaviour
     [SerializeField] private Sprite m_incorrectAnswerSprite;
     [SerializeField] private List<GameObject> m_pointsBar;
     [SerializeField] private List<Button> m_buttons;
+    
+    [SerializeField] private bool[] m_isCorrectAnswer;
 
 
     private void Start()
