@@ -44,4 +44,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Quiz1.unity
     guid: c4467b28890533a4384b59228a93fede
+  - enabled: 1
+    path: Assets/Scenes/RouletteScene.unity
+    guid: b1a9bf6e03fb71d47adfdc4c813ca957
   m_configObjects: {}

@@ -37,7 +37,7 @@ public enum Tema {
 public enum TipoPregunta
 {
 
-    condiconales, procedures, triggers,general,proyeccion
+    condiconales, procedures, triggers,seleccion,proyeccion,seleccion_condicion,proyeccion_condicion,union,diferencia, interseccion, join_natural,union_codicion
 }
 
 
