@@ -19,6 +19,10 @@ namespace _Scripts
         private float radiusWheel;
         public float rotationSpeed = 100f;
         private bool isSpinning = false;
+        private bool isOnSegment = false;
+        private int currentSegment = 0;
+
+        public RectTransform topRouletteRectTransform;
         
         Sequence sequence;
         
@@ -41,7 +45,18 @@ namespace _Scripts
             if (isSpinning)
             {
                 transform.Rotate(0f, 0f, rotationSpeed * Time.deltaTime);
+                if (!isOnSegment)
+                {
+                    currentSegment = SelectSegment();
+                }
+
+                if (currentSegment != SelectSegment())
+                {
+                    isOnSegment = false;
+                }
             }
+            // GameObject topObject = GetTopGameObject();
+            // topObject.transform.DOScale(Vector3.one * 1.2f, 0.1f);
         }
 
         private void InitializeWheel()
@@ -76,7 +91,6 @@ namespace _Scripts
             {
                 // Si la ruleta ya está girando, detén la rotación y selecciona un segmento.
                 isSpinning = false;
-                // SelectSegment();
             }
             else
             {
@@ -98,12 +112,40 @@ namespace _Scripts
             // SelectSegment();
         }
         
-        private void SelectSegment()
+        private GameObject GetTopGameObject()
+        {
+            GameObject topObject = null;
+
+            foreach (var icon in icons)
+            {
+                var iconRectTransform = icon.GetComponent<RectTransform>().rect;
+
+                if (iconRectTransform.Overlaps(topRouletteRectTransform.rect))
+                {
+                    Debug.Log("Top object overlap found!");
+                    topObject = icon;
+                }
+            }
+            
+            return topObject;
+        }
+        
+        private int SelectSegment()
         {
             int numberOfSegments = icons.Count;
             float segmentRotation = 360f / numberOfSegments;
             int selectedSegment = Mathf.FloorToInt(transform.eulerAngles.z / segmentRotation);
-            // Aquí puedes agregar el código para manejar el resultado de la ruleta.
+            Debug.Log("selectedSegment: " + icons[selectedSegment].name);
+            icons[selectedSegment].transform.DOScale(Vector3.one * 1.2f, 0.1f);
+            Debug.Log(selectedSegment);
+            isOnSegment = true;
+
+            if (selectedSegment >= 1)
+            {
+                icons[selectedSegment - 1].transform.DOScale(Vector3.one, 0.1f);
+            }
+
+            return selectedSegment;
             // HandleWheelResult(selectedSegment);
         }
 
