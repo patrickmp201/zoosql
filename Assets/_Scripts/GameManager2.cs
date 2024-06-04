@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using _Scripts;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -13,6 +14,9 @@ public class GameManager2 : MonoBehaviour
     [SerializeField] private Sprite m_incorrectAnswerSprite;
     [SerializeField] private List<GameObject> m_pointsBar;
     [SerializeField] private List<Button> m_buttons;
+    
+    [SerializeField] private AudioClip m_correctAnswerSound;
+    [SerializeField] private AudioClip m_incorrectAnswerSound;
     
     [SerializeField] private bool[] m_isCorrectAnswer;
 
@@ -42,10 +46,12 @@ public class GameManager2 : MonoBehaviour
         if (Preguntas[IndexPregunta].text_alternativas[indexButton].Is_correct)
         {
             m_pointsBar[IndexPregunta].GetComponent<Image>().sprite = m_correctAnswerSprite;
+            SoundManager.Instance.PlaySound(m_correctAnswerSound);
         }
         else
         {
             m_pointsBar[IndexPregunta].GetComponent<Image>().sprite = m_incorrectAnswerSprite;
+            SoundManager.Instance.PlaySound(m_incorrectAnswerSound);
         }
         
         IndexPregunta = IndexPregunta + 1;
