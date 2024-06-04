@@ -338,6 +338,7 @@ MonoBehaviour:
   m_iconPrefab: {fileID: 5588988357336127728, guid: 8dfd6565deac03444af469707e6153f6, type: 3}
   numberOfIcons: 10
   rotationSpeed: 100
+  topRouletteRectTransform: {fileID: 547000999}
 --- !u!114 &356347085
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -387,6 +388,7 @@ GameObject:
   - component: {fileID: 547000999}
   - component: {fileID: 547001001}
   - component: {fileID: 547001000}
+  - component: {fileID: 547001002}
   m_Layer: 5
   m_Name: Top
   m_TagString: Untagged
@@ -411,7 +413,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 450}
-  m_SizeDelta: {x: 120, y: 120}
+  m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &547001000
 MonoBehaviour:
@@ -451,6 +453,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 547000998}
   m_CullTransparentMesh: 1
+--- !u!114 &547001002
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 547000998}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb4136f58ed277a4ab16671ddb60b728, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &720395821
 GameObject:
   m_ObjectHideFlags: 0
@@ -754,8 +768,8 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 720395822}
-  - {fileID: 356347083}
   - {fileID: 547000999}
+  - {fileID: 356347083}
   - {fileID: 897406466}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

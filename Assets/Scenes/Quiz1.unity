@@ -1591,6 +1591,9 @@ MonoBehaviour:
   - {fileID: 2031301619}
   - {fileID: 1324860556}
   - {fileID: 1421081247}
+  m_correctAnswerSound: {fileID: 8300000, guid: 195f45736c7097e43915ac5854c6eadc, type: 3}
+  m_incorrectAnswerSound: {fileID: 8300000, guid: a20c251eb94cc314d85b2c1852c112e3, type: 3}
+  m_isCorrectAnswer: 
 --- !u!4 &1424384726
 Transform:
   m_ObjectHideFlags: 0
@@ -1600,7 +1603,7 @@ Transform:
   m_GameObject: {fileID: 1424384724}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 717.3472, y: 305.38132, z: -3.6794577}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
