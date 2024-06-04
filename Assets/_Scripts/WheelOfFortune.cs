@@ -1,10 +1,12 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using DG.Tweening;
+using Random = System.Random;
 
 namespace _Scripts
 {
@@ -17,10 +19,12 @@ namespace _Scripts
         public int numberOfIcons = 10;
         private readonly List<GameObject> icons = new ();
         private float radiusWheel;
-        public float rotationSpeed = 100f;
+        public float rotationSpeed;
         private bool isSpinning = false;
         private bool isOnSegment = false;
         private int currentSegment = 0;
+
+        [SerializeField] private float[] m_numbersForWheel;
 
         public RectTransform topRouletteRectTransform;
         
@@ -35,9 +39,15 @@ namespace _Scripts
 
         private void Start()
         {
+            m_numbersForWheel = new float[] { 89, 97, 104, 111, 117, 123 };
+            var random = new Random();
+            var randomIndex = random.Next(m_numbersForWheel.Length);
+            rotationSpeed = m_numbersForWheel[randomIndex];
+            
             InitializeWheel();
             AnimateIconsToEdges();
-            sequence.Play();
+            sequence.Play().onComplete += SpinWheel;
+
         }
 
         private void Update()
@@ -48,12 +58,17 @@ namespace _Scripts
                 if (!isOnSegment)
                 {
                     currentSegment = SelectSegment();
+                    icons[9 - currentSegment].transform.DOPunchScale(Vector3.one * 1.4f, 0.3f, 3, 0f);
+                    Debug.Log(icons[9 - currentSegment].name);
+                    // sDebug.Log(selectedSegment);
+                    Debug.Log(currentSegment);
                 }
 
                 if (currentSegment != SelectSegment())
                 {
                     isOnSegment = false;
                 }
+
             }
             // GameObject topObject = GetTopGameObject();
             // topObject.transform.DOScale(Vector3.one * 1.2f, 0.1f);
@@ -67,6 +82,7 @@ namespace _Scripts
                 
                 var randomSprite = UnityEngine.Random.Range(0, 2) == 0 ? correctAnswerSprite : incorrectAnswerSprite;
                 icon.GetComponent<Image>().sprite = randomSprite;
+                icon.gameObject.name = "Icon" + (9 - i);
                 
                 // agregar el gameobject icon como hijo del gameobject que tiene este script
                 icon.transform.SetParent(transform);
@@ -81,7 +97,8 @@ namespace _Scripts
             {
                 float angle = i * 360f / numberOfIcons;
                 Vector3 endPos = new Vector3(Mathf.Cos(angle * Mathf.Deg2Rad), Mathf.Sin(angle * Mathf.Deg2Rad), 0f) * radiusWheel; // 0.5f is the radius of the wheel
-                sequence.Append(icons[i].transform.DOLocalMove(endPos, 0.3f).SetEase(Ease.OutBack));
+                // icons[i].transform.DOLocalMove(endPos, 0.15f).SetEase(Ease.OutBack);
+                sequence.Append(icons[i].transform.DOLocalMove(endPos, 0.15f).SetEase(Ease.OutBack));
             }
         }
 
@@ -122,7 +139,7 @@ namespace _Scripts
 
                 if (iconRectTransform.Overlaps(topRouletteRectTransform.rect))
                 {
-                    Debug.Log("Top object overlap found!");
+                    // Debug.Log("Top object overlap found!");
                     topObject = icon;
                 }
             }
@@ -135,15 +152,9 @@ namespace _Scripts
             int numberOfSegments = icons.Count;
             float segmentRotation = 360f / numberOfSegments;
             int selectedSegment = Mathf.FloorToInt(transform.eulerAngles.z / segmentRotation);
-            Debug.Log("selectedSegment: " + icons[selectedSegment].name);
-            icons[selectedSegment].transform.DOScale(Vector3.one * 1.2f, 0.1f);
-            Debug.Log(selectedSegment);
+            // Debug.Log("selectedSegment: " + icons[selectedSegment].name);
+            // sDebug.Log(selectedSegment);
             isOnSegment = true;
-
-            if (selectedSegment >= 1)
-            {
-                icons[selectedSegment - 1].transform.DOScale(Vector3.one, 0.1f);
-            }
 
             return selectedSegment;
             // HandleWheelResult(selectedSegment);
