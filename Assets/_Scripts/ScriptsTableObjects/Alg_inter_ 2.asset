@@ -15,7 +15,7 @@ MonoBehaviour:
   text_pregunta: "Manny quiere saber todos los nombres de los animales que est\xE1n
     en la jaula n\xFAmero 2 o en la jaula n\xFAmero 3. \xBFQu\xE9 consulta deber\xEDa
     usar?"
-  spr_pregunta: {fileID: 21300000, guid: 0d907246061f24645a999fbc56e678be, type: 3}
+  spr_pregunta: {fileID: 21300000, guid: 74e419b9010e8854b970810c1fb7e93f, type: 3}
   text_alternativas:
   - text_alternativa: "\u03C0_nombre (\u03C3_jaula=2 (Animales)) \u2229 \u03C0_nombre
       (\u03C3_jaula=3 (Animales))"

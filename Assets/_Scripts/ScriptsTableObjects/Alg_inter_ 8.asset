@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   text_pregunta: "Manny quiere ver la informaci\xF3n completa de los animales junto
     con la informaci\xF3n de sus cuidadores. \xBFQu\xE9 consulta deber\xEDa usar?"
-  spr_pregunta: {fileID: 21300000, guid: 0d907246061f24645a999fbc56e678be, type: 3}
+  spr_pregunta: {fileID: 21300000, guid: b491a779531db0742a8f6ef614bb874f, type: 3}
   text_alternativas:
   - text_alternativa: "Animales \u2A1D Cuidadores"
     Is_correct: 1

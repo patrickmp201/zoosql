@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   text_pregunta: "Manny quiere saber los nombres de los animales que no est\xE1n
     en la zona 'A'. \xBFQu\xE9 consulta deber\xEDa usar?"
-  spr_pregunta: {fileID: 21300000, guid: 0d907246061f24645a999fbc56e678be, type: 3}
+  spr_pregunta: {fileID: 21300000, guid: 613b610c6364c644cbdf759c962f1823, type: 3}
   text_alternativas:
   - text_alternativa: "\u03C0_nombre (Animales) \u222A \u03C0_nombre (\u03C3_zona='A'
       (Animales))"

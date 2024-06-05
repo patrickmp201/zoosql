@@ -15,7 +15,7 @@ MonoBehaviour:
   text_pregunta: "Manny quiere saber los nombres de los animales que tienen menos
     de 3 a\xF1os y que tambi\xE9n son mam\xEDferos. \xBFQu\xE9 consulta deber\xEDa
     usar?"
-  spr_pregunta: {fileID: 21300000, guid: 0d907246061f24645a999fbc56e678be, type: 3}
+  spr_pregunta: {fileID: 21300000, guid: 581f7804436ad524b8fc3c9e0984727f, type: 3}
   text_alternativas:
   - text_alternativa: "\u03C0_nombre (\u03C3_edad<3 (Animales)) \u222A \u03C0_nombre
       (\u03C3_tipo='Mam\xEDfero' (Animales))"
