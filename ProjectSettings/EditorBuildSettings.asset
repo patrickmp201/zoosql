@@ -38,9 +38,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Scene10.unity
     guid: 9aed46e53d5c7794785006f99248fe7a
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/Scene11.unity
-    guid: a46bcda8f2be50946b8baa66fa2d22a4
+    guid: 6ceb8c72ee7ba44469723c59f486b68d
+  - enabled: 1
+    path: Assets/Scenes/Scene12.unity
+    guid: 849ce386848b88c45b4c3596d6d33221
   - enabled: 1
     path: Assets/Scenes/Quiz1.unity
     guid: c4467b28890533a4384b59228a93fede
