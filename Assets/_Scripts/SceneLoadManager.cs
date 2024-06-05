@@ -21,9 +21,7 @@ public class SceneLoadManager : MonoBehaviour
         }
         else
         {
-            Debug.Log("ya existe");
-            Destroy(this);
-
+            Destroy(gameObject);
         }
 
     }

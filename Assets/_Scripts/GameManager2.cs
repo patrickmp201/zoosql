@@ -32,8 +32,7 @@ public class GameManager2 : MonoBehaviour
         }
         else
         {
-            Debug.Log("ya existe");
-            Destroy(this);
+            Destroy(gameObject);
         }
     }
 
@@ -41,7 +40,7 @@ public class GameManager2 : MonoBehaviour
     private void Start()
     {
         IniciarJuego();
-        m_IsCorrectAnswer = new bool[Preguntas.Count];
+        m_IsCorrectAnswer = new bool[10];
     }
 
 
@@ -55,6 +54,7 @@ public class GameManager2 : MonoBehaviour
 
         // Aquí puedes añadir la lógica para iniciar el juego con la lista de preguntas seleccionadas
         Debug.Log(Preguntas.Count);
+        UIManager.Instance.Start();
         UIManager.Instance.MostrarPregunta(Preguntas[IndexPregunta]);
     }
 
@@ -79,6 +79,7 @@ public class GameManager2 : MonoBehaviour
         if (IndexPregunta >= Preguntas.Count)
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+            IndexPregunta = 0;
         }
         
         UIManager.Instance.MostrarPregunta(Preguntas[IndexPregunta]);

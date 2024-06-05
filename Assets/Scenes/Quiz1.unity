@@ -256,7 +256,7 @@ GameObject:
   - component: {fileID: 191714782}
   - component: {fileID: 191714781}
   m_Layer: 5
-  m_Name: Text
+  m_Name: TextQuestion
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -541,6 +541,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 67bb9ce1259be0841be74c821605f24e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  QuizUI: {fileID: 0}
 --- !u!4 &626625781
 Transform:
   m_ObjectHideFlags: 0
@@ -1044,6 +1045,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: d1232eefe18b6f9499e645a9580f24f3, type: 2}
   ListaPreguntasAlgebra:
   - {fileID: 11400000, guid: a167244f701e9f5468008350ea0dc1e1, type: 2}
+  - {fileID: 11400000, guid: 226a9e3dc7fa32e4b8b192200a219957, type: 2}
   PreguntasRonda: 10
 --- !u!4 &1274140425
 Transform:
@@ -1593,7 +1595,6 @@ MonoBehaviour:
   - {fileID: 1421081247}
   m_correctAnswerSound: {fileID: 8300000, guid: 195f45736c7097e43915ac5854c6eadc, type: 3}
   m_incorrectAnswerSound: {fileID: 8300000, guid: a20c251eb94cc314d85b2c1852c112e3, type: 3}
-  m_isCorrectAnswer: 
 --- !u!4 &1424384726
 Transform:
   m_ObjectHideFlags: 0

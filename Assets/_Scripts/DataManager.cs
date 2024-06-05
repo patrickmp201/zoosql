@@ -21,9 +21,7 @@ public class DataManager : MonoBehaviour
         }
         else
         {
-            Debug.Log("ya existe");
-            Destroy(this);
-
+            Destroy(gameObject);
         }
 
     } 

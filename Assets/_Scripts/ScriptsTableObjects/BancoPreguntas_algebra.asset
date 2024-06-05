@@ -13,15 +13,15 @@ MonoBehaviour:
   m_Name: BancoPreguntas_algebra
   m_EditorClassIdentifier: 
   BancoPreguntas:
-  - {fileID: 11400000, guid: c9864538648333142b92f8ee5ad1ee76, type: 2}
-  - {fileID: 11400000, guid: 83d50cde91adc6e40b2b9e3736d95d30, type: 2}
-  - {fileID: 11400000, guid: 33d7a158774f9ad4c8b3686bfd30c9af, type: 2}
-  - {fileID: 11400000, guid: cf99dc22a229df24882d1b161a96a461, type: 2}
-  - {fileID: 11400000, guid: 83cca9afaced2334f8cf07234f3226a8, type: 2}
-  - {fileID: 11400000, guid: 0651016e5e8069d4eba885256953fa39, type: 2}
-  - {fileID: 11400000, guid: 7c33db45b8f1b8e41b9b68d1d253a7a3, type: 2}
-  - {fileID: 11400000, guid: 9830bff62fc49264e807aec11f532bf6, type: 2}
-  - {fileID: 11400000, guid: e69963f41b8ce0c42a4368c8103dedb9, type: 2}
-  - {fileID: 11400000, guid: bfaf0e4f2c5df1d48a166ab4f710913f, type: 2}
+  - {fileID: 11400000, guid: d68133249f99e6249b31f2b34bde7e8b, type: 2}
+  - {fileID: 11400000, guid: b501737b0e74e874f829f02a5117cdec, type: 2}
+  - {fileID: 11400000, guid: 98c02fe18c2d35a42868088bef9ccee1, type: 2}
+  - {fileID: 11400000, guid: f253e989d7945f84fb5e9e363bf2a661, type: 2}
+  - {fileID: 11400000, guid: 65ee3fc87c34f134c970c694c285926d, type: 2}
+  - {fileID: 11400000, guid: 8cf726a3e8092724d87e20024fb6d89a, type: 2}
+  - {fileID: 11400000, guid: a681922b84554b148b3ab96c2ef03742, type: 2}
+  - {fileID: 11400000, guid: 6939b6d5b792f4b4783ba26f632736da, type: 2}
+  - {fileID: 11400000, guid: 39843db494e59984b8973f0f45dd5ff5, type: 2}
+  - {fileID: 11400000, guid: 3961eb0cdbb07a142bbfa328fcd6baa2, type: 2}
   TipoPregunta: 0
   tema: 1

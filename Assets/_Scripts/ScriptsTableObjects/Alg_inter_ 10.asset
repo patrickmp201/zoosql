@@ -15,7 +15,7 @@ MonoBehaviour:
   text_pregunta: "Manny quiere saber los nombres de los animales que est\xE1n en
     la zona 'A' o que tienen m\xE1s de 5 a\xF1os. \xBFQu\xE9 consulta deber\xEDa
     usar?"
-  spr_pregunta: {fileID: 21300000, guid: 0d907246061f24645a999fbc56e678be, type: 3}
+  spr_pregunta: {fileID: 21300000, guid: eaebe06b75cb3f34ba3b2fc61602cdb6, type: 3}
   text_alternativas:
   - text_alternativa: "\u03C0_nombre (\u03C3_zona='A' (Animales)) \u2229 \u03C0_nombre
       (\u03C3_edad>5 (Animales))"

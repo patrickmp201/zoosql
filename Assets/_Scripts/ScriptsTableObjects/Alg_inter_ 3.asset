@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   text_pregunta: "Manny quiere saber los nombres de los cuidadores que trabajan en
     la zona 'A' o en la zona 'B'. \xBFQu\xE9 consulta deber\xEDa usar?"
-  spr_pregunta: {fileID: 21300000, guid: 0d907246061f24645a999fbc56e678be, type: 3}
+  spr_pregunta: {fileID: 21300000, guid: eaa09e52498e8f547a5584901bf8772b, type: 3}
   text_alternativas:
   - text_alternativa: "\u03C0_nombre (\u03C3_zona='A' (Cuidadores)) \u222A \u03C0_nombre
       (\u03C3_zona='B' (Cuidadores))"

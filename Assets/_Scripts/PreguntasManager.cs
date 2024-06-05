@@ -21,8 +21,7 @@ public class PreguntasManager : MonoBehaviour
         }
         else
         {
-            Debug.Log("ya existe");
-            Destroy(this);
+            Destroy(gameObject);
 
         }
 
@@ -62,7 +61,6 @@ public class PreguntasManager : MonoBehaviour
         for (int i = 0; i<PreguntasRonda; i++)
         {
             int random = Random.Range(0, PreguntaSO.Count);
-            Debug.Log(random);
             preguntas.Add(PreguntaSO[random]);
 
             

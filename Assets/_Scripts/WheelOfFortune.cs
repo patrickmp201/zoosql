@@ -70,6 +70,12 @@ namespace _Scripts
                 }
 
             }
+
+            if (rotationSpeed == 0 && !isSpinning)
+            {
+                HandleWheelResult(currentSegment);
+            }
+            
             // GameObject topObject = GetTopGameObject();
             // topObject.transform.DOScale(Vector3.one * 1.2f, 0.1f);
         }
@@ -159,14 +165,23 @@ namespace _Scripts
             // HandleWheelResult(selectedSegment);
         }
 
-        // private void HandleWheelResult(int selectedSegmentIndex)
-        // {
-        //     // Si el segmento seleccionado tiene el sprite de respuesta correcta, avanza al siguiente nivel
-        //     var image = wheelSegments[selectedSegmentIndex].GetComponent<Image>();
-        //     if (image.sprite == correctAnswerSprite)
-        //     {
-        //         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-        //     }
-        // }
+        private void HandleWheelResult(int selectedSegmentIndex)
+        {
+            // Si el segmento seleccionado tiene el sprite de respuesta correcta, avanza al siguiente nivel
+            var image = icons[selectedSegmentIndex].GetComponent<Image>();
+            if (image.sprite == correctAnswerSprite)
+            {
+                DataManager.Instance.dificultad = Dificultad.intermedio;
+                DataManager.Instance.tema = Tema.Algebra;
+                PreguntasManager.Instance.ElegirTema(DataManager.Instance.dificultad, DataManager.Instance.tema);
+            }
+            else
+            {
+                // Si el segmento seleccionado tiene el sprite de respuesta incorrecta, retrocede al nivel anterior
+                PreguntasManager.Instance.ElegirTema(Dificultad.facil, Tema.Algebra);
+            }
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
+            GameManager2.Instance.IniciarJuego();
+        }
     }
 }

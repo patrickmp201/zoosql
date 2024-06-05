@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   text_pregunta: "Manny quiere encontrar a los animales que est\xE1n tanto en la
     zona 'B' como en la zona 'C'. \xBFQu\xE9 consulta deber\xEDa usar?"
-  spr_pregunta: {fileID: 21300000, guid: 0d907246061f24645a999fbc56e678be, type: 3}
+  spr_pregunta: {fileID: 21300000, guid: c07519105b9545f438974c3892d16c3c, type: 3}
   text_alternativas:
   - text_alternativa: "\u03C0_nombre (\u03C3_zona='B' (Animales)) \u222A \u03C0_nombre
       (\u03C3_zona='C' (Animales))"

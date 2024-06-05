@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -8,27 +9,7 @@ public class UIManager : MonoBehaviour
     public static UIManager Instance { private set; get; }
 
 
-    public QuizUI QuizUI
-    {
-        get
-        {
-            if (quizUI != null)
-            {
-                Debug.Log("entro al if");
-                return quizUI;
-
-            }
-            else
-            {
-
-                Debug.Log("entro al else");
-                quizUI = GameObject.Find("QuizUI").GetComponent<QuizUI>();
-                Debug.Log(quizUI);
-                return quizUI;
-            }
-        }
-    }
-    private QuizUI quizUI;
+    public QuizUI QuizUI;
 
 
 
@@ -42,16 +23,25 @@ public class UIManager : MonoBehaviour
         }
         else
         {
-            Debug.Log("ya existe");
-            Destroy(this);
+            Destroy(gameObject);
 
         }
 
     }
 
+    public void Start()
+    {
+        Init();
+    }
+
+    public void Init()
+    {
+        QuizUI = QuizUI.Instance;
+    }
+
     public void MostrarPregunta(PreguntaSO pregunta)
     {
-
+        QuizUI.Init();
         QuizUI.MostrarPregunta(pregunta);
     }
 
