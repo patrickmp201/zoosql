@@ -79,9 +79,8 @@ namespace _Scripts
             for (int i = 0; i < numberOfIcons; i++)
             {
                 GameObject icon = Instantiate(m_iconPrefab, transform.position, Quaternion.identity, transform);
-                
-                var randomSprite = UnityEngine.Random.Range(0, 2) == 0 ? correctAnswerSprite : incorrectAnswerSprite;
-                icon.GetComponent<Image>().sprite = randomSprite;
+
+                icon.GetComponent<Image>().sprite = GameManager2.Instance.m_IsCorrectAnswer[i] ? correctAnswerSprite : incorrectAnswerSprite;
                 icon.gameObject.name = "Icon" + (9 - i);
                 
                 // agregar el gameobject icon como hijo del gameobject que tiene este script
@@ -154,7 +153,7 @@ namespace _Scripts
             int selectedSegment = Mathf.FloorToInt(transform.eulerAngles.z / segmentRotation);
             // Debug.Log("selectedSegment: " + icons[selectedSegment].name);
             // sDebug.Log(selectedSegment);
-            isOnSegment = true;
+            isOnSegment = true; 
 
             return selectedSegment;
             // HandleWheelResult(selectedSegment);

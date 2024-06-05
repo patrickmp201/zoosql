@@ -3,11 +3,14 @@ using System.Collections;
 using System.Collections.Generic;
 using _Scripts;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 
 public class GameManager2 : MonoBehaviour
 {
+    public static GameManager2 Instance { private set; get; }
+    
     public int IndexPregunta = 0;
     public List<PreguntaSO> Preguntas;
     [SerializeField] private Sprite m_correctAnswerSprite;
@@ -18,12 +21,27 @@ public class GameManager2 : MonoBehaviour
     [SerializeField] private AudioClip m_correctAnswerSound;
     [SerializeField] private AudioClip m_incorrectAnswerSound;
     
-    [SerializeField] private bool[] m_isCorrectAnswer;
+    public bool[] m_IsCorrectAnswer { private set; get; }
+
+    private void Awake()
+    {
+        if (Instance == null)
+        {
+            Instance = this;
+            DontDestroyOnLoad(this);
+        }
+        else
+        {
+            Debug.Log("ya existe");
+            Destroy(this);
+        }
+    }
 
 
     private void Start()
     {
         IniciarJuego();
+        m_IsCorrectAnswer = new bool[Preguntas.Count];
     }
 
 
@@ -47,18 +65,20 @@ public class GameManager2 : MonoBehaviour
         {
             m_pointsBar[IndexPregunta].GetComponent<Image>().sprite = m_correctAnswerSprite;
             SoundManager.Instance.PlaySound(m_correctAnswerSound);
+            m_IsCorrectAnswer[IndexPregunta] = true;
         }
         else
         {
             m_pointsBar[IndexPregunta].GetComponent<Image>().sprite = m_incorrectAnswerSprite;
             SoundManager.Instance.PlaySound(m_incorrectAnswerSound);
+            m_IsCorrectAnswer[IndexPregunta] = false;
         }
         
         IndexPregunta = IndexPregunta + 1;
         
-        if (IndexPregunta >= Preguntas.Count - 1)
+        if (IndexPregunta >= Preguntas.Count)
         {
-            IndexPregunta = Preguntas.Count - 1;
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
         
         UIManager.Instance.MostrarPregunta(Preguntas[IndexPregunta]);
