@@ -13,29 +13,29 @@ MonoBehaviour:
   m_Name: BancoPreguntas_plsql
   m_EditorClassIdentifier: 
   BancoPreguntas:
-  - {fileID: 11400000, guid: d68133249f99e6249b31f2b34bde7e8b, type: 2}
-  - {fileID: 11400000, guid: b501737b0e74e874f829f02a5117cdec, type: 2}
-  - {fileID: 11400000, guid: 98c02fe18c2d35a42868088bef9ccee1, type: 2}
-  - {fileID: 11400000, guid: f253e989d7945f84fb5e9e363bf2a661, type: 2}
-  - {fileID: 11400000, guid: 65ee3fc87c34f134c970c694c285926d, type: 2}
-  - {fileID: 11400000, guid: a681922b84554b148b3ab96c2ef03742, type: 2}
-  - {fileID: 11400000, guid: 6939b6d5b792f4b4783ba26f632736da, type: 2}
-  - {fileID: 11400000, guid: 39843db494e59984b8973f0f45dd5ff5, type: 2}
-  - {fileID: 11400000, guid: 3961eb0cdbb07a142bbfa328fcd6baa2, type: 2}
-  - {fileID: 11400000, guid: 90dff36d3adcc294babb7cd938035e54, type: 2}
-  - {fileID: 11400000, guid: d5a7ca384f68c4544bee70f0ca96f270, type: 2}
-  - {fileID: 11400000, guid: 33f28b8e01fcfcd469f108d4b969f350, type: 2}
-  - {fileID: 11400000, guid: 51541950c52439d48af4b10ca1d2d737, type: 2}
-  - {fileID: 11400000, guid: 3551ac51c52da3746b7e1d7981a823e3, type: 2}
-  - {fileID: 11400000, guid: 192a5dc193ff96142981d4adbf60e43d, type: 2}
-  - {fileID: 11400000, guid: 899dde267252c5045967d83c801053ab, type: 2}
-  - {fileID: 11400000, guid: f279e3849fd0c3340a92d8e2f058efdc, type: 2}
-  - {fileID: 11400000, guid: c2eab1cc38f659646a915c8da7a8a910, type: 2}
-  - {fileID: 11400000, guid: a50e9c32cd9d2d04cabb6c449ee88bdc, type: 2}
-  - {fileID: 11400000, guid: 2620c8669aee5444dac051a8cca0fa72, type: 2}
-  - {fileID: 11400000, guid: 1c34b17651c0ab44b9a1892593a3b994, type: 2}
-  - {fileID: 11400000, guid: c978fd040ace3604b8340fbf2eb4655e, type: 2}
-  - {fileID: 11400000, guid: 5abea7344ae0033469a8eaa8d12a4da5, type: 2}
-  - {fileID: 11400000, guid: 1c5af389c6fd5ac429fe70909bfdb715, type: 2}
-  TipoPregunta: 0
+  - {fileID: 11400000, guid: 00dc8d27930b12b4096db1a2903f4fad, type: 2}
+  - {fileID: 11400000, guid: a9ce3fb27b7bd484d91f38b6b8544ddb, type: 2}
+  - {fileID: 11400000, guid: ab6c026d94ec16d4cab6d611c503e7bf, type: 2}
+  - {fileID: 11400000, guid: 389ea763096cc9f499aed620fb6fc3d2, type: 2}
+  - {fileID: 11400000, guid: d7c1e8c8a62df1f4ab9300fbdd6a2ac5, type: 2}
+  - {fileID: 11400000, guid: 26b3ab8fa2eb1064dbf1db89a37a52c0, type: 2}
+  - {fileID: 11400000, guid: d2eb3cdee60d50f4c86f2463c0da93bf, type: 2}
+  - {fileID: 11400000, guid: 967958f136da05549be7d03c18c5f2d8, type: 2}
+  - {fileID: 11400000, guid: e80825e8e3156ed4b909ac13b52e1a3e, type: 2}
+  - {fileID: 11400000, guid: 6429a92850650104d900aeb7211e28cf, type: 2}
+  - {fileID: 11400000, guid: f3ba4c7fd31c0cf4c94ba94cf59f4994, type: 2}
+  - {fileID: 11400000, guid: 15c758dfc8d2fff43ab67842c9834caf, type: 2}
+  - {fileID: 11400000, guid: 4fee508a9994098478da22d1f1d4b5ee, type: 2}
+  - {fileID: 11400000, guid: 7704084d71ff3b546870cd22046cc18b, type: 2}
+  - {fileID: 11400000, guid: cef9647063913064590cc4b6ded3d25e, type: 2}
+  - {fileID: 11400000, guid: 0e21a24f67e2ea24c8de54fb329a884c, type: 2}
+  - {fileID: 11400000, guid: 7a43ef440ce9547428535ce04484d3a7, type: 2}
+  - {fileID: 11400000, guid: 8c21f556ad7740d41afb3bebee7e5e6d, type: 2}
+  - {fileID: 11400000, guid: 4c62bc20d478bab4284285eca5ab7c8e, type: 2}
+  - {fileID: 11400000, guid: ab452fdc7114d814386a7b925027ace2, type: 2}
+  - {fileID: 11400000, guid: 64193f5d54682b849913485e75391fbc, type: 2}
+  - {fileID: 11400000, guid: 96828ac7c12a1af44bacd3864fece851, type: 2}
+  - {fileID: 11400000, guid: 0f8cb3fbc87993249b6bb42bcee54830, type: 2}
+  - {fileID: 11400000, guid: a89cfa916693ac94da1f81fcaad28a14, type: 2}
+  TipoPregunta: 5
   tema: 0

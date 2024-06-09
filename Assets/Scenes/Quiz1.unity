@@ -1042,10 +1042,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ListaPreguntasPlSQL:
-  - {fileID: 11400000, guid: d1232eefe18b6f9499e645a9580f24f3, type: 2}
+  - {fileID: 11400000, guid: cd5b334c2e0def142bb18c0d5116730c, type: 2}
   ListaPreguntasAlgebra:
-  - {fileID: 11400000, guid: a167244f701e9f5468008350ea0dc1e1, type: 2}
-  - {fileID: 11400000, guid: 226a9e3dc7fa32e4b8b192200a219957, type: 2}
+  - {fileID: 11400000, guid: d1232eefe18b6f9499e645a9580f24f3, type: 2}
   PreguntasRonda: 10
 --- !u!4 &1274140425
 Transform:
