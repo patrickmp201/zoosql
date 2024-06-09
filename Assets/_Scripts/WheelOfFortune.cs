@@ -168,20 +168,24 @@ namespace _Scripts
         private void HandleWheelResult(int selectedSegmentIndex)
         {
             // Si el segmento seleccionado tiene el sprite de respuesta correcta, avanza al siguiente nivel
-            var image = icons[selectedSegmentIndex].GetComponent<Image>();
-            if (image.sprite == correctAnswerSprite)
+            var correctAnswer = GameManager2.Instance.m_IsCorrectAnswer[9 - selectedSegmentIndex];
+            if (correctAnswer)
             {
-                DataManager.Instance.dificultad = Dificultad.intermedio;
-                DataManager.Instance.tema = Tema.Algebra;
-                PreguntasManager.Instance.ElegirTema(DataManager.Instance.dificultad, DataManager.Instance.tema);
+                DataManager.Instance.Dificultad = Dificultad.Intermedio;
+                DataManager.Instance.Tema = Tema.Algebra;
+                Debug.Log("Respuesta Correcto, Dificultad: Intermedio, Tema: Algebra");
             }
             else
             {
                 // Si el segmento seleccionado tiene el sprite de respuesta incorrecta, retrocede al nivel anterior
-                PreguntasManager.Instance.ElegirTema(Dificultad.facil, Tema.Algebra);
+                DataManager.Instance.Dificultad = Dificultad.Facil;
+                DataManager.Instance.Tema = Tema.Algebra;
+                Debug.Log("Respuesta Incorrecto, Dificultad: Facil, Tema: Algebra");
             }
+            sequence.Kill();
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
-            GameManager2.Instance.IniciarJuego();
+            GameManager2.Instance.Awake();
+            GameManager2.Instance.Start();
         }
     }
 }

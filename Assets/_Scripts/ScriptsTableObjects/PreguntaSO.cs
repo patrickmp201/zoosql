@@ -16,7 +16,7 @@ public class PreguntaSO : ScriptableObject
 // El enum es un indice
 public enum Dificultad{
 
-    facil,intermedio,dificil
+    Facil, Intermedio, Dificil
 
 }
 
@@ -31,7 +31,7 @@ public  struct Alternativa {
 
 public enum Tema {
 
-    plsql, Algebra
+    Plsql, Algebra
 }
 
 public enum TipoPregunta

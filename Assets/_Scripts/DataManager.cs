@@ -6,8 +6,8 @@ public class DataManager : MonoBehaviour
 {
     //set privado get publico
     public static DataManager Instance { private set; get; }
-    public Dificultad dificultad;
-    public Tema tema;
+    public Dificultad Dificultad { get; set; }
+    public Tema Tema { get; set; }
 
 
     //Se llama cuando un objeto es cargado en memoria, se ejecuta cuando esta cargando el juego
@@ -25,18 +25,6 @@ public class DataManager : MonoBehaviour
         }
 
     } 
-
-    public void SetDificultad(Dificultad dificultad)
-    {
-        this.dificultad = dificultad;
-
-    }
-
-    public void SetTema(Tema tema)
-    {
-
-        this.tema = tema;
-    }
 
 
 

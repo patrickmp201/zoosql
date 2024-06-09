@@ -32,17 +32,17 @@ public class OpcionesBoton : MonoBehaviour
 
     public void SetDificultad()
     {
-        DataManager.Instance.SetDificultad(EleccionDificultad);
+        DataManager.Instance.Dificultad = EleccionDificultad;
 
-        if (EleccionDificultad == Dificultad.facil)
+        if (EleccionDificultad == Dificultad.Facil)
         {
             SceneLoadManager.Instance.ChangeScene("Scene1");
         }
-        else if (EleccionDificultad == Dificultad.intermedio)
+        else if (EleccionDificultad == Dificultad.Intermedio)
         {
             SceneLoadManager.Instance.ChangeScene("Scene1");
         }
-        else if (EleccionDificultad == Dificultad.dificil)
+        else if (EleccionDificultad == Dificultad.Dificil)
         {
             SceneLoadManager.Instance.ChangeScene("Scene1");
         }
@@ -50,6 +50,6 @@ public class OpcionesBoton : MonoBehaviour
 
     public void Tema()
     {
-        DataManager.Instance.SetTema(tema);
+        DataManager.Instance.Tema = tema;
     }
 }
