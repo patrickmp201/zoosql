@@ -6,7 +6,6 @@ using UnityEngine.UI;
 
 public class QuizUI : MonoBehaviour
 {
-    public static QuizUI Instance { private set; get; }
     
     [SerializeField] private Text m_question;
     [SerializeField] private Image m_image;
@@ -15,15 +14,6 @@ public class QuizUI : MonoBehaviour
     
     private void Awake()
     {
-        if (Instance == null)
-        {
-            Instance = this;
-            DontDestroyOnLoad(this);
-        }
-        else
-        {
-            Destroy(gameObject);
-        }
     }
     
     public void Start()

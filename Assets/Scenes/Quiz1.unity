@@ -227,8 +227,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d03d7a9c70a5ef841a9863ee2281fd0d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dificultad: 0
-  tema: 0
 --- !u!4 &156739942
 Transform:
   m_ObjectHideFlags: 0
@@ -398,50 +396,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 197006251}
   m_CullTransparentMesh: 1
---- !u!1 &298667342
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 298667344}
-  - component: {fileID: 298667343}
-  m_Layer: 0
-  m_Name: QuizDB
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &298667343
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 298667342}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e8ee7a98ceccb4d418239d7aa9343904, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!4 &298667344
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 298667342}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 673.5888, y: 388.3553, z: -8.676311}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &568791623
 GameObject:
   m_ObjectHideFlags: 0
@@ -1573,7 +1527,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   IndexPregunta: 0
-  Preguntas: []
+  bdQuestionsAlgebra:
+  - {fileID: 11400000, guid: a167244f701e9f5468008350ea0dc1e1, type: 2}
+  - {fileID: 11400000, guid: 226a9e3dc7fa32e4b8b192200a219957, type: 2}
+  bdQuestionsPlSQL:
+  - {fileID: 11400000, guid: d1232eefe18b6f9499e645a9580f24f3, type: 2}
+  questions: []
+  m_tema: 0
+  m_dificultad: 0
   m_correctAnswerSprite: {fileID: 21300000, guid: c4fa6abda9d2ce547a3cb4b21e23eda1, type: 3}
   m_incorrectAnswerSprite: {fileID: 21300000, guid: cdcbe6f5c9e0a5047af760221679072d, type: 3}
   m_pointsBar:
@@ -1587,13 +1548,9 @@ MonoBehaviour:
   - {fileID: 1906641182}
   - {fileID: 55476756}
   - {fileID: 197006251}
-  m_buttons:
-  - {fileID: 6761864841665063071}
-  - {fileID: 2031301619}
-  - {fileID: 1324860556}
-  - {fileID: 1421081247}
   m_correctAnswerSound: {fileID: 8300000, guid: 195f45736c7097e43915ac5854c6eadc, type: 3}
   m_incorrectAnswerSound: {fileID: 8300000, guid: a20c251eb94cc314d85b2c1852c112e3, type: 3}
+  m_QuizUI: {fileID: 0}
 --- !u!4 &1424384726
 Transform:
   m_ObjectHideFlags: 0
@@ -1621,7 +1578,6 @@ GameObject:
   - component: {fileID: 1469175505}
   - component: {fileID: 1469175504}
   - component: {fileID: 1469175508}
-  - component: {fileID: 1469175509}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1799,18 +1755,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &1469175509
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1469175503}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f0bc2657dc9ae574990e4339fe7cf61c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1479808682
 GameObject:
   m_ObjectHideFlags: 0
@@ -2787,7 +2731,6 @@ SceneRoots:
   m_Roots:
   - {fileID: 1469175506}
   - {fileID: 976840525}
-  - {fileID: 298667344}
   - {fileID: 731739186}
   - {fileID: 1621216080}
   - {fileID: 1274140425}
