@@ -23,10 +23,13 @@ namespace _Scripts
         private bool isSpinning = false;
         private bool isOnSegment = false;
         private int currentSegment = 0;
+        private bool isFinished = false;
 
         [SerializeField] private float[] m_numbersForWheel;
 
         public RectTransform topRouletteRectTransform;
+        
+        public ResultUI resultUI;
         
         Sequence sequence;
         
@@ -71,7 +74,7 @@ namespace _Scripts
 
             }
 
-            if (rotationSpeed == 0 && !isSpinning)
+            if (rotationSpeed == 0 && !isSpinning && !isFinished)
             {
                 HandleWheelResult(currentSegment);
             }
@@ -183,9 +186,9 @@ namespace _Scripts
                 Debug.Log("Respuesta Incorrecto, Dificultad: Facil, Tema: Algebra");
             }
             sequence.Kill();
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
-            GameManager2.Instance.Awake();
-            GameManager2.Instance.Start();
+            // SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
+            resultUI.OpenPanel();
+            isFinished = true;
         }
     }
 }

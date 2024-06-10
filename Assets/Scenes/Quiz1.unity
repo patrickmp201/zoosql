@@ -1528,8 +1528,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   IndexPregunta: 0
   bdQuestionsAlgebra:
-  - {fileID: 11400000, guid: a167244f701e9f5468008350ea0dc1e1, type: 2}
-  - {fileID: 11400000, guid: 226a9e3dc7fa32e4b8b192200a219957, type: 2}
+  - {fileID: 11400000, guid: d1232eefe18b6f9499e645a9580f24f3, type: 2}
+  - {fileID: 11400000, guid: ab6ef6638c988fe45a0bf5d636d93a98, type: 2}
   bdQuestionsPlSQL:
   - {fileID: 11400000, guid: d1232eefe18b6f9499e645a9580f24f3, type: 2}
   questions: []

@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using System;
+using UnityEngine.Serialization;
+
 [CreateAssetMenu(fileName = "NuevaPregunta", menuName = "Pregunta")]
 public class PreguntaSO : ScriptableObject
 {
@@ -11,7 +13,7 @@ public class PreguntaSO : ScriptableObject
     public Alternativa[] text_alternativas;
     public Dificultad dificultad;
     public Tema tema;
-    public TipoPregunta TipoPregunta;
+    public TipoPregunta tipoPregunta;
 }
 // El enum es un indice
 public enum Dificultad{

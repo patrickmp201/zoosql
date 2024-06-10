@@ -55,6 +55,7 @@ public class GameManager2 : MonoBehaviour
 
     public void IniciarJuego()
     {
+        questions = new List<PreguntaSO>();
         questions = GetQuestions(DataManager.Instance.Dificultad, DataManager.Instance.Tema);
 
         // Aquí puedes añadir la lógica para iniciar el juego con la lista de preguntas seleccionadas
@@ -108,10 +109,11 @@ public class GameManager2 : MonoBehaviour
             }
         }
         
-        for (int i = 0; i < 10; i++)
+        while (questionsByDifficulty.Count > 0)
         {
-            int random = UnityEngine.Random.Range(0, questionsByDifficulty.Count);
-            randomQuestions.Add(questionsByDifficulty[random]);
+            int randomIndex = UnityEngine.Random.Range(0, questionsByDifficulty.Count);
+            randomQuestions.Add(questionsByDifficulty[randomIndex]);
+            questionsByDifficulty.RemoveAt(randomIndex);
         }
         
         return randomQuestions;
