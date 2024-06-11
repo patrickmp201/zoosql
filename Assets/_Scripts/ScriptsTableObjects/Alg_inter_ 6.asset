@@ -30,4 +30,4 @@ MonoBehaviour:
     Is_correct: 1
   dificultad: 1
   tema: 1
-  TipoPregunta: 9
+  tipoPregunta: 15

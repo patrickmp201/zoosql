@@ -27,4 +27,4 @@ MonoBehaviour:
     Is_correct: 0
   dificultad: 0
   tema: 1
-  TipoPregunta: 4
+  tipoPregunta: 4
