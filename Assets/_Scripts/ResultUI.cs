@@ -13,11 +13,19 @@ public class ResultUI : MonoBehaviour
     public List<TextMeshProUGUI> typeTexts;
     public List<TextMeshProUGUI> valueTexts;
 
-    private Dictionary<string, int> results;
+    public GameObject gridGameObject;
+    
+    public GameObject prefabTMP_Type;
+    public GameObject prefabTMP_Value;
+
+    private Dictionary<string, int> totalQuestionTypeDictionary;
+    private Dictionary<string, int> correctQuestionTypeDictionary;
 
     private void Awake()
     {
-        results = new Dictionary<string, int>();
+        totalQuestionTypeDictionary = new Dictionary<string, int>();
+        correctQuestionTypeDictionary = new Dictionary<string, int>();
+        
     }
 
     private void Start()
@@ -28,6 +36,7 @@ public class ResultUI : MonoBehaviour
     public void OpenPanel()
     {
         resultPanel.SetActive(true);
+        gridGameObject = GameObject.Find("Grid");
         ShowResults();
     }
     
@@ -47,32 +56,76 @@ public class ResultUI : MonoBehaviour
     //Funcion que recorra por todo el enum TipoPregunta y muestre el tipo de pregunta y el valor de la pregunta en el UI
     public void ShowResults()
     {
-        // Quiero recorrer la lista questions de GameManager2 y contar cuántas preguntas hay de cada tipo y guardalas en el diccionario results
-        
-        foreach (var question in GameManager2.Instance.questions)
+        //
+        // foreach (var question in GameManager2.Instance.questions)
+        // {
+        //     if (totalQuestionTypeDictionary.ContainsKey(question.tipoPregunta.ToString()))
+        //     {
+        //         totalQuestionTypeDictionary[question.tipoPregunta.ToString()]++;
+        //     }
+        //     else
+        //     {
+        //         totalQuestionTypeDictionary.Add(question.tipoPregunta.ToString(), 1);
+        //     }
+        // }
+
+
+        for (int i = 0; i < 10; i++)
         {
-            if (results.ContainsKey(question.tipoPregunta.ToString()))
+            var question = GameManager2.Instance.questions[i];
+            Debug.Log($"Indice de pregunta: {i}");
+            Debug.Log($"Cantidad de preguntas: {GameManager2.Instance.questions.Count}");
+            Debug.Log($"Pregunta {i + 1}: {question.text_pregunta}");
+            
+            
+            if (totalQuestionTypeDictionary.ContainsKey(question.tipoPregunta.ToString()))
             {
-                results[question.tipoPregunta.ToString()]++;
+                totalQuestionTypeDictionary[question.tipoPregunta.ToString()]++;
             }
             else
             {
-                results.Add(question.tipoPregunta.ToString(), 1);
+                totalQuestionTypeDictionary.Add(question.tipoPregunta.ToString(), 1);
+                
+                var typeTMP = Instantiate(prefabTMP_Type, gridGameObject.transform);
+                var valueTMP = Instantiate(prefabTMP_Value, gridGameObject.transform);
+                
+                typeTexts.Add(typeTMP.GetComponent<TextMeshProUGUI>());
+                valueTexts.Add(valueTMP.GetComponent<TextMeshProUGUI>());
+            }
+
+            if (GameManager2.Instance.m_IsCorrectAnswer[i])
+            {
+                if (correctQuestionTypeDictionary.ContainsKey(question.tipoPregunta.ToString()))
+                {
+                    correctQuestionTypeDictionary[question.tipoPregunta.ToString()]++;
+                }
+                else
+                {
+                    correctQuestionTypeDictionary.Add(question.tipoPregunta.ToString(), 1);
+                }
             }
         }
         
-        // Mostrar en un log los resultados
-        foreach (var result in results)
-        {
-            Debug.Log($"Tipo de pregunta: {result.Key}, Cantidad: {result.Value}");
-        }
         
+        
+        // Mostrar en un log los resultados
+        foreach (var totalQuestionType in totalQuestionTypeDictionary)
+        {
+            // Debug.Log($"Tipo de pregunta: {totalQuestionType.Key}, Cantidad: {correctQuestionTypeDictionary[totalQuestionType.Key]}/{totalQuestionType.Value}");
+        }
+
         // Recorrer el diccionario results y mostrar los resultados en el UI
-        int numberOfElements = Enum.GetValues(typeof(TipoPregunta)).Length;
-        for (int i = 0; i < numberOfElements; i++)
+        var numberOfElements = Enum.GetValues(typeof(TipoPregunta)).Length;
+        for (var i = 0; i < numberOfElements; i++)
         {
             typeTexts[i].text = ((TipoPregunta)i).ToString();
-            valueTexts[i].text = results.ContainsKey(((TipoPregunta)i).ToString()) ? results[((TipoPregunta)i).ToString()].ToString() : "0";
+            var totalAnswersByQuestionType = "";
+            totalAnswersByQuestionType = totalQuestionTypeDictionary.ContainsKey(((TipoPregunta)i).ToString()) ? totalQuestionTypeDictionary[((TipoPregunta)i).ToString()].ToString() : "0";
+
+            var correctAnswersByQuestionType = "";
+            correctAnswersByQuestionType = correctQuestionTypeDictionary.ContainsKey(((TipoPregunta)i).ToString()) ? correctQuestionTypeDictionary[((TipoPregunta)i).ToString()].ToString() : "0";
+            
+            valueTexts[i].text = $"{correctAnswersByQuestionType}/{totalAnswersByQuestionType}";
         }
     }
 }

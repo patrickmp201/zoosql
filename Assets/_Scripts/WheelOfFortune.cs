@@ -62,9 +62,9 @@ namespace _Scripts
                 {
                     currentSegment = SelectSegment();
                     icons[9 - currentSegment].transform.DOPunchScale(Vector3.one * 1.4f, 0.3f, 3, 0f);
-                    Debug.Log(icons[9 - currentSegment].name);
+                    // Debug.Log(icons[9 - currentSegment].name);
                     // sDebug.Log(selectedSegment);
-                    Debug.Log(currentSegment);
+                    // Debug.Log(currentSegment);
                 }
 
                 if (currentSegment != SelectSegment())
