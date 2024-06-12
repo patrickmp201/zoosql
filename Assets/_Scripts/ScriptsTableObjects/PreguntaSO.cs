@@ -38,10 +38,11 @@ public enum Tema {
 
 public enum TipoPregunta
 {
+    //PlSQL
+    TiposDatosDeclaraciones, OperacionManipulacionDatos, ControlFlujoBucles,ManejoExcepciones,FuncionesOperadores,TiposDatosColecciones,EstructuraManejoDatos,FuncionesProcedimientos,
 
-    introduccion,condiconales, estructuras_control, excepiones,cursores,procedimientos,triggers, prueba,
-    
-    seleccion,proyeccion,seleccion_condicion,proyeccion_condicion,union,diferencia, interseccion, join_natural,union_codicion
+    //Algebra
+    Seleccion, Proyeccion,SeleccionCondicion,ProyeccionCondicion,Union,Diferencia,Interseccion, JoinNatural,UnionCodicion,JoinNaturalCondicion,AgregacionAgrupamiento,AgregacionCondicion,Agregacion
 }
 
 

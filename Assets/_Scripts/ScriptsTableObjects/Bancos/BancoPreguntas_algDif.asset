@@ -13,14 +13,14 @@ MonoBehaviour:
   m_Name: BancoPreguntas_algDif
   m_EditorClassIdentifier: 
   BancoPreguntas:
-  - {fileID: 11400000, guid: 90dff36d3adcc294babb7cd938035e54, type: 2}
-  - {fileID: 11400000, guid: d5a7ca384f68c4544bee70f0ca96f270, type: 2}
-  - {fileID: 11400000, guid: 33f28b8e01fcfcd469f108d4b969f350, type: 2}
-  - {fileID: 11400000, guid: 51541950c52439d48af4b10ca1d2d737, type: 2}
-  - {fileID: 11400000, guid: 3551ac51c52da3746b7e1d7981a823e3, type: 2}
-  - {fileID: 11400000, guid: 192a5dc193ff96142981d4adbf60e43d, type: 2}
-  - {fileID: 11400000, guid: 899dde267252c5045967d83c801053ab, type: 2}
-  - {fileID: 11400000, guid: f279e3849fd0c3340a92d8e2f058efdc, type: 2}
-  - {fileID: 11400000, guid: c2eab1cc38f659646a915c8da7a8a910, type: 2}
-  - {fileID: 11400000, guid: a50e9c32cd9d2d04cabb6c449ee88bdc, type: 2}
+  - {fileID: 11400000, guid: f09e703eba0a921428c3a69730419517, type: 2}
+  - {fileID: 11400000, guid: 2e7f5e2a408d8384c8d95bc94ffbe9ba, type: 2}
+  - {fileID: 11400000, guid: 3ce295fac570f2045b8461ce02588741, type: 2}
+  - {fileID: 11400000, guid: 3ab4f86b32c5b084aba07db0bfe5eec8, type: 2}
+  - {fileID: 11400000, guid: a264969c3ef165f479e4f2d683242938, type: 2}
+  - {fileID: 11400000, guid: 9752b22942091f041ae32a3030870458, type: 2}
+  - {fileID: 11400000, guid: dd7d425ef92810c4a8599ce06d78128c, type: 2}
+  - {fileID: 11400000, guid: a801255f3ceb9b0439384f090abc03ec, type: 2}
+  - {fileID: 11400000, guid: 4abc93de8fa56a14b89a99243d91bf3b, type: 2}
+  - {fileID: 11400000, guid: b50535c184ecdec4c9fce9f9bdc063db, type: 2}
   dificultad: 2

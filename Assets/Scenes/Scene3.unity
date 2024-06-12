@@ -781,13 +781,17 @@ PrefabInstance:
       value: DialoguePanel
       objectReference: {fileID: 0}
     - target: {fileID: 999809570930852124, guid: 516d508c38e48b345a5087894404aebc, type: 3}
+      propertyPath: lines.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 999809570930852124, guid: 516d508c38e48b345a5087894404aebc, type: 3}
       propertyPath: lines.Array.data[0]
       value: "De pronto\u2026 Aparece un loro desconocido en su jaula "
       objectReference: {fileID: 0}
     - target: {fileID: 999809570930852124, guid: 516d508c38e48b345a5087894404aebc, type: 3}
       propertyPath: lines.Array.data[1]
-      value: "Este loro se llama Perry, logr\xF3 escapar de su jaula hace un tiempo
-        y lleva d\xEDas escondido "
+      value: "\u201CEncontr\xE9 la manera de salvar a todos los animales del zool\xF3gico,
+        pero necesito tu ayuda\u201D "
       objectReference: {fileID: 0}
     - target: {fileID: 999809570930852124, guid: 516d508c38e48b345a5087894404aebc, type: 3}
       propertyPath: lines.Array.data[2]

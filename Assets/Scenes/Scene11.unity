@@ -620,7 +620,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 999809570930852124, guid: 516d508c38e48b345a5087894404aebc, type: 3}
       propertyPath: lines.Array.size
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 999809570930852124, guid: 516d508c38e48b345a5087894404aebc, type: 3}
       propertyPath: lines.Array.data[0]
@@ -634,8 +634,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 999809570930852124, guid: 516d508c38e48b345a5087894404aebc, type: 3}
       propertyPath: lines.Array.data[2]
-      value: "Te permite encontrar datos que cumplen con una cierta condici\xF3n.
-        Por ejemplo, encontrar animales que sean tipo mam\xEDfero"
+      value: "Es decir: \u03C3_tipo='Mam\xEDfero' (Animales)  Esta runa est\xE1 seleccionando 
+        todos los animales que son tipo mam\xEDfero "
       objectReference: {fileID: 0}
     - target: {fileID: 999809570930852124, guid: 516d508c38e48b345a5087894404aebc, type: 3}
       propertyPath: lines.Array.data[3]

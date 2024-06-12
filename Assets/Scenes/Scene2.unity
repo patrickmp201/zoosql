@@ -1063,6 +1063,19 @@ PrefabInstance:
       propertyPath: m_Name
       value: DialoguePanel
       objectReference: {fileID: 0}
+    - target: {fileID: 999809570930852124, guid: 516d508c38e48b345a5087894404aebc, type: 3}
+      propertyPath: lines.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 999809570930852124, guid: 516d508c38e48b345a5087894404aebc, type: 3}
+      propertyPath: lines.Array.data[0]
+      value: "Manny era un elefante que deseaba escapar del zool\xF3gico "
+      objectReference: {fileID: 0}
+    - target: {fileID: 999809570930852124, guid: 516d508c38e48b345a5087894404aebc, type: 3}
+      propertyPath: lines.Array.data[1]
+      value: "\xC9l no ten\xEDa esperanzas de lograr salir alg\xFAn d\xEDa, hasta
+        que de pronto\u2026"
+      objectReference: {fileID: 0}
     - target: {fileID: 8824110573854660973, guid: 516d508c38e48b345a5087894404aebc, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
