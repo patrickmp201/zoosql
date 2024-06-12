@@ -1257,6 +1257,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d03d7a9c70a5ef841a9863ee2281fd0d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  <Dificultad>k__BackingField: 0
+  <Tema>k__BackingField: 0
 --- !u!1 &1062223484
 GameObject:
   m_ObjectHideFlags: 0
@@ -1905,8 +1907,8 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
-  m_Volume: 1
+  m_PlayOnAwake: 0
+  m_Volume: 0.264
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -2920,8 +2922,8 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
-  m_Volume: 1
+  m_PlayOnAwake: 0
+  m_Volume: 0.501
   m_Pitch: 1
   Loop: 0
   Mute: 0

@@ -48,9 +48,16 @@ public class ResultUI : MonoBehaviour
     public void OnClickClose()
     {
         ClosePanel();
-        SceneManager.LoadScene("Quiz1");
-        GameManager2.Instance.Awake();
-        GameManager2.Instance.Start();
+        if (GameManager2.Instance.currentLevel >= 5)
+        {
+            SceneManager.LoadScene("GameOverScene");
+        }
+        else
+        {
+            SceneManager.LoadScene("Quiz1");
+            GameManager2.Instance.Awake();
+            GameManager2.Instance.Start();
+        }
     }
     
     //Funcion que recorra por todo el enum TipoPregunta y muestre el tipo de pregunta y el valor de la pregunta en el UI
@@ -106,16 +113,6 @@ public class ResultUI : MonoBehaviour
             }
         }
         
-        
-        
-        // Mostrar en un log los resultados
-        foreach (var totalQuestionType in totalQuestionTypeDictionary)
-        {
-            // Debug.Log($"Tipo de pregunta: {totalQuestionType.Key}, Cantidad: {correctQuestionTypeDictionary[totalQuestionType.Key]}/{totalQuestionType.Value}");
-        }
-
-        // Recorrer el diccionario results y mostrar los resultados en el UI
-        var numberOfElements = Enum.GetValues(typeof(TipoPregunta)).Length;
         for (var i = 0; i < typeTexts.Count; i++)
         {
             var currentTypeQuestionKey = totalQuestionTypeDictionary.ElementAt(i).Key;

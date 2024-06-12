@@ -39,7 +39,7 @@ public enum Tema {
 public enum TipoPregunta
 {
 
-    introduccion,condiconales, estructuras_control, excepiones,cursores,procedimientos,triggers,
+    introduccion,condiconales, estructuras_control, excepiones,cursores,procedimientos,triggers, prueba,
     
     seleccion,proyeccion,seleccion_condicion,proyeccion_condicion,union,diferencia, interseccion, join_natural,union_codicion
 }

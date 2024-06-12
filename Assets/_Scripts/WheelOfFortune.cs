@@ -14,6 +14,8 @@ namespace _Scripts
     {
         public Sprite correctAnswerSprite;
         public Sprite incorrectAnswerSprite;
+
+        public AudioClip backgroundSound;
         
         [SerializeField] private GameObject m_iconPrefab;
         public int numberOfIcons = 10;
@@ -112,6 +114,7 @@ namespace _Scripts
 
         public void SpinWheel()
         {
+            SoundManager.Instance.PlaySound(backgroundSound, true);
             if (isSpinning)
             {
                 // Si la ruleta ya está girando, detén la rotación y selecciona un segmento.
@@ -170,11 +173,18 @@ namespace _Scripts
 
         private void HandleWheelResult(int selectedSegmentIndex)
         {
+            SoundManager.Instance.StopSound();
             // Si el segmento seleccionado tiene el sprite de respuesta correcta, avanza al siguiente nivel
             var correctAnswer = GameManager2.Instance.m_IsCorrectAnswer[9 - selectedSegmentIndex];
             if (correctAnswer)
             {
                 GameManager2.Instance.currentLevel++;
+
+                if (GameManager2.Instance.currentLevel >= 6)
+                {
+                    GameManager2.Instance.currentLevel = 5;
+                }
+                
                 DataManager.Instance.Tema = GameManager2.Instance.difficultyLevel[GameManager2.Instance.currentLevel].Item1;
                 DataManager.Instance.Dificultad = GameManager2.Instance.difficultyLevel[GameManager2.Instance.currentLevel].Item2;
                 

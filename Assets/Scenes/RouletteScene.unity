@@ -735,6 +735,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   correctAnswerSprite: {fileID: 21300000, guid: c4fa6abda9d2ce547a3cb4b21e23eda1, type: 3}
   incorrectAnswerSprite: {fileID: 21300000, guid: cdcbe6f5c9e0a5047af760221679072d, type: 3}
+  backgroundSound: {fileID: 8300000, guid: 509c4f0f494e04140b7204f8d2c3d3e1, type: 3}
   m_iconPrefab: {fileID: 5588988357336127728, guid: 8dfd6565deac03444af469707e6153f6, type: 3}
   numberOfIcons: 10
   rotationSpeed: 89

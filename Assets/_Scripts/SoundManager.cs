@@ -1,4 +1,5 @@
 using System;
+using DG.Tweening;
 using UnityEngine;
 
 namespace _Scripts
@@ -27,5 +28,18 @@ namespace _Scripts
         {
             sfxAudioSource.PlayOneShot(clip);
         }        
+        
+        public void PlaySound(AudioClip clip, bool isLoop)
+        {
+            musicAudioSource.loop = isLoop;
+            musicAudioSource.clip = clip;
+            musicAudioSource.Play();
+        }
+
+
+        public void StopSound()
+        {
+            musicAudioSource.Stop();
+        }
     }
 }
