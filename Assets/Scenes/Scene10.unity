@@ -620,11 +620,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 999809570930852124, guid: 516d508c38e48b345a5087894404aebc, type: 3}
       propertyPath: lines.Array.size
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 999809570930852124, guid: 516d508c38e48b345a5087894404aebc, type: 3}
       propertyPath: lines.Array.data[0]
-      value: "La segunda es la runa de proyecci\xF3n (\u03C0), esta se enfoca solo
+      value: "La primera es la runa de proyecci\xF3n (\u03C0), esta se enfoca solo
         en ciertos atributos de los animales, como sus nombres y edades"
       objectReference: {fileID: 0}
     - target: {fileID: 999809570930852124, guid: 516d508c38e48b345a5087894404aebc, type: 3}
@@ -634,8 +634,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 999809570930852124, guid: 516d508c38e48b345a5087894404aebc, type: 3}
       propertyPath: lines.Array.data[2]
-      value: "Te permite elegir ciertos datos espec\xEDficos de los animales. Por
-        ejemplo, puedes ver solo el nombre y edad de los animales."
+      value: "Es decir: \u03C0_nombre, edad (Animales)   Esta runa te muestra solo
+        los nombres y edades de los animales. "
       objectReference: {fileID: 0}
     - target: {fileID: 999809570930852124, guid: 516d508c38e48b345a5087894404aebc, type: 3}
       propertyPath: lines.Array.data[3]

@@ -423,21 +423,21 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 999809570930852124, guid: 516d508c38e48b345a5087894404aebc, type: 3}
       propertyPath: lines.Array.size
-      value: 4
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 999809570930852124, guid: 516d508c38e48b345a5087894404aebc, type: 3}
       propertyPath: lines.Array.data[0]
-      value: "La \xFAnica manera es consiguiendo todos los datos del zool\xF3gico
-        para saber donde est\xE1 el calabozo"
-      objectReference: {fileID: 0}
-    - target: {fileID: 999809570930852124, guid: 516d508c38e48b345a5087894404aebc, type: 3}
-      propertyPath: lines.Array.data[1]
       value: "Para eso deberemos usar el \xE1lgebra relacional, lo cual es lo m\xE1s
         b\xE1sico de las runas SQL"
       objectReference: {fileID: 0}
     - target: {fileID: 999809570930852124, guid: 516d508c38e48b345a5087894404aebc, type: 3}
-      propertyPath: lines.Array.data[2]
+      propertyPath: lines.Array.data[1]
       value: "Pero nos servir\xE1\u2026 Te voy a explicar en qu\xE9 consiste, Elef "
+      objectReference: {fileID: 0}
+    - target: {fileID: 999809570930852124, guid: 516d508c38e48b345a5087894404aebc, type: 3}
+      propertyPath: lines.Array.data[2]
+      value: "Las runas b\xE1sicas SQL son unos s\xEDmbolos que sirven para encontrar
+        cierta informaci\xF3n seg\xFAn lo que requieras."
       objectReference: {fileID: 0}
     - target: {fileID: 999809570930852124, guid: 516d508c38e48b345a5087894404aebc, type: 3}
       propertyPath: lines.Array.data[3]

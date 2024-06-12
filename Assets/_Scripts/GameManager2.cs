@@ -10,6 +10,7 @@ using UnityEngine.UI;
 public class GameManager2 : MonoBehaviour
 {
     public static GameManager2 Instance { private set; get; }
+    public bool IsGameOver = false;
     
     public int IndexPregunta = 0;
     [SerializeField] private List<ListPreguntasSO> bdQuestionsAlgebra;
@@ -50,6 +51,7 @@ public class GameManager2 : MonoBehaviour
     {
         IniciarJuego();
         m_IsCorrectAnswer = new bool[10];
+        IsGameOver = false;
 
         difficultyLevel = new List<(Tema, Dificultad)>
         {

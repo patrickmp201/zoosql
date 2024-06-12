@@ -183,6 +183,7 @@ namespace _Scripts
                 if (GameManager2.Instance.currentLevel >= 6)
                 {
                     GameManager2.Instance.currentLevel = 5;
+                    GameManager2.Instance.IsGameOver = true;
                 }
                 
                 DataManager.Instance.Tema = GameManager2.Instance.difficultyLevel[GameManager2.Instance.currentLevel].Item1;

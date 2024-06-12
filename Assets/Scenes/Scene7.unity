@@ -133,7 +133,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1409573255986637614, guid: ef38419d0e9cebd4d9c4f844bae02aec, type: 3}
       propertyPath: indiceEscenas
-      value: 8
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 8444297963928529018, guid: ef38419d0e9cebd4d9c4f844bae02aec, type: 3}
       propertyPath: m_LocalPosition.x
@@ -584,25 +584,22 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 999809570930852124, guid: 516d508c38e48b345a5087894404aebc, type: 3}
       propertyPath: lines.Array.size
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 999809570930852124, guid: 516d508c38e48b345a5087894404aebc, type: 3}
       propertyPath: lines.Array.data[0]
       value: "Con el paso del tiempo, como fantasma de este zool\xF3gico logr\xE9
-        hacer equipo con el le\xF3n Farid para que \xE9l lograse lo que yo nunca
-        pude"
+        hacer equipo con el le\xF3n Alex para que \xE9l lograse lo que yo nunca pude"
       objectReference: {fileID: 0}
     - target: {fileID: 999809570930852124, guid: 516d508c38e48b345a5087894404aebc, type: 3}
       propertyPath: lines.Array.data[1]
-      value: "En el pasado intent\xE9 escapar de este zool\xF3gico, al igual que
-        t\xFA rob\xE9 dicha tableta y llev\xE9 a\xF1os tratando de entender las runas
-        SQL"
+      value: "\xC9l ya tiene un nivel mucho m\xE1s avanzado de las runas SQL, sin
+        embargo lo descubrieron y lo metieron al calabozo "
       objectReference: {fileID: 0}
     - target: {fileID: 999809570930852124, guid: 516d508c38e48b345a5087894404aebc, type: 3}
       propertyPath: lines.Array.data[2]
-      value: "Cuando por fin sab\xEDa c\xF3mo usarlas, un animal traidor le dijo
-        a los cuidadores de qui\xE9n hab\xEDa robado la tableta, al final tuvieron
-        que acabar conmigo\u2026 "
+      value: 'Lo necesitamos para salvar a todos, pero primero debemos descubrir
+        su paradero '
       objectReference: {fileID: 0}
     - target: {fileID: 999809570930852124, guid: 516d508c38e48b345a5087894404aebc, type: 3}
       propertyPath: lines.Array.data[3]

@@ -783,11 +783,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 999809570930852124, guid: 516d508c38e48b345a5087894404aebc, type: 3}
       propertyPath: lines.Array.size
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 999809570930852124, guid: 516d508c38e48b345a5087894404aebc, type: 3}
       propertyPath: lines.Array.data[0]
-      value: 'Yo, Keymond. Pero ahora solo soy un fantasma '
+      value: "Yo s\xE9 como usarlas,  me llamo Keymond. Soy un fantasma que merodea
+        por el zool\xF3gico "
       objectReference: {fileID: 0}
     - target: {fileID: 999809570930852124, guid: 516d508c38e48b345a5087894404aebc, type: 3}
       propertyPath: lines.Array.data[1]

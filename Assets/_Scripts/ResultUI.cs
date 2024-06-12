@@ -48,7 +48,7 @@ public class ResultUI : MonoBehaviour
     public void OnClickClose()
     {
         ClosePanel();
-        if (GameManager2.Instance.currentLevel >= 5)
+        if (GameManager2.Instance.IsGameOver == true)
         {
             SceneManager.LoadScene("GameOverScene");
         }
@@ -115,8 +115,11 @@ public class ResultUI : MonoBehaviour
         
         for (var i = 0; i < typeTexts.Count; i++)
         {
+            var randomColor = new Color(UnityEngine.Random.value, UnityEngine.Random.value, UnityEngine.Random.value);
+
             var currentTypeQuestionKey = totalQuestionTypeDictionary.ElementAt(i).Key;
-            typeTexts[i].text = $"Tópico: {currentTypeQuestionKey}";
+            typeTexts[i].text = $"-Tópico: {currentTypeQuestionKey}";
+            typeTexts[i].color = randomColor;
             // typeTexts[i].text = $"{currentTypeQuestionKey}";
             var totalAnswersByQuestionType = "";
             totalAnswersByQuestionType = totalQuestionTypeDictionary.ContainsKey(currentTypeQuestionKey) ? totalQuestionTypeDictionary[currentTypeQuestionKey].ToString() : "1";
@@ -125,6 +128,7 @@ public class ResultUI : MonoBehaviour
             correctAnswersByQuestionType = correctQuestionTypeDictionary.ContainsKey(currentTypeQuestionKey) ? correctQuestionTypeDictionary[currentTypeQuestionKey].ToString() : "0";
             
             valueTexts[i].text = $"{correctAnswersByQuestionType}/{totalAnswersByQuestionType}";
+            valueTexts[i].color = randomColor;
         }
     }
 }

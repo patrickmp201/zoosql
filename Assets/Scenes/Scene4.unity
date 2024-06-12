@@ -205,16 +205,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 999809570930852124, guid: 516d508c38e48b345a5087894404aebc, type: 3}
       propertyPath: lines.Array.size
-      value: 6
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 999809570930852124, guid: 516d508c38e48b345a5087894404aebc, type: 3}
       propertyPath: lines.Array.data[0]
-      value: "\u2026\u201DEstaba viendo la manera de escapar de este zool\xF3gico\u201D "
+      value: "\u2026\u201DMientras ve\xEDa como tratar de escapar, en la madrugada
+        logr\xE9 robar una tableta y unos manuales\u201D "
       objectReference: {fileID: 0}
     - target: {fileID: 999809570930852124, guid: 516d508c38e48b345a5087894404aebc, type: 3}
       propertyPath: lines.Array.data[1]
-      value: "\u2026\u201DComo todos los d\xEDas, mi cuidador pas\xF3 por m\xED para
-        alimentarme\u201D "
+      value: "\u2026\u201DIntent\xE9 leer el manual para usar la tableta, pero hay
+        s\xEDmbolos que no entiendo\u201D "
       objectReference: {fileID: 0}
     - target: {fileID: 999809570930852124, guid: 516d508c38e48b345a5087894404aebc, type: 3}
       propertyPath: lines.Array.data[2]
@@ -439,7 +440,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1409573255986637614, guid: ef38419d0e9cebd4d9c4f844bae02aec, type: 3}
       propertyPath: indiceEscenas
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8444297963928529018, guid: ef38419d0e9cebd4d9c4f844bae02aec, type: 3}
       propertyPath: m_LocalPosition.x
