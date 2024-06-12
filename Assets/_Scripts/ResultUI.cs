@@ -48,7 +48,7 @@ public class ResultUI : MonoBehaviour
     public void OnClickClose()
     {
         ClosePanel();
-        if (GameManager2.Instance.currentLevel >= 5)
+        if (GameManager2.Instance.isGameOver)
         {
             SceneManager.LoadScene("GameOverScene");
         }
@@ -56,7 +56,7 @@ public class ResultUI : MonoBehaviour
         {
             SceneManager.LoadScene("Quiz1");
             GameManager2.Instance.Awake();
-            GameManager2.Instance.Start();
+            GameManager2.Instance.IniciarJuego();
         }
     }
     

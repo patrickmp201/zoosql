@@ -19,6 +19,8 @@ public class GameManager2 : MonoBehaviour
     public List<(Tema, Dificultad)> difficultyLevel;
     public int currentLevel;
     
+    public bool isGameOver = false;
+    
     [SerializeField] private Sprite m_correctAnswerSprite;
     [SerializeField] private Sprite m_incorrectAnswerSprite;
     [SerializeField] private List<GameObject> m_pointsBar;
@@ -50,6 +52,7 @@ public class GameManager2 : MonoBehaviour
     {
         IniciarJuego();
         m_IsCorrectAnswer = new bool[10];
+        isGameOver = false;
 
         difficultyLevel = new List<(Tema, Dificultad)>
         {

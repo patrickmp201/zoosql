@@ -179,10 +179,11 @@ namespace _Scripts
             if (correctAnswer)
             {
                 GameManager2.Instance.currentLevel++;
-
+                
                 if (GameManager2.Instance.currentLevel >= 6)
                 {
                     GameManager2.Instance.currentLevel = 5;
+                    GameManager2.Instance.isGameOver = true;
                 }
                 
                 DataManager.Instance.Tema = GameManager2.Instance.difficultyLevel[GameManager2.Instance.currentLevel].Item1;
