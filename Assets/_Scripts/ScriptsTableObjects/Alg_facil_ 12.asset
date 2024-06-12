@@ -18,10 +18,10 @@ MonoBehaviour:
   text_alternativas:
   - text_alternativa: "\u03C0_nombre, edad (\u03C3_tipo='Mam\xEDfero' \u2227 peso<300
       (Animales))"
-    Is_correct: 1
+    Is_correct: 0
   - text_alternativa: "\u03C0_nombre, edad (\u03C3_peso<300 (\u03C3_tipo='Mam\xEDfero'
       (Animales)))"
-    Is_correct: 0
+    Is_correct: 1
   - text_alternativa: "\u03C3_tipo='Mam\xEDfero' \u2227 peso<300 (\u03C0_nombre,
       edad (Animales))"
     Is_correct: 0

@@ -15,9 +15,9 @@ public class GameManager2 : MonoBehaviour
     [SerializeField] private List<ListPreguntasSO> bdQuestionsAlgebra;
     [SerializeField] private List<ListPreguntasSO> bdQuestionsPlSQL;
     public List<PreguntaSO> questions;
-    
-    [SerializeField] private Tema m_tema;
-    [SerializeField] private Dificultad m_dificultad;
+
+    public List<(Tema, Dificultad)> difficultyLevel;
+    public int currentLevel;
     
     [SerializeField] private Sprite m_correctAnswerSprite;
     [SerializeField] private Sprite m_incorrectAnswerSprite;
@@ -50,17 +50,34 @@ public class GameManager2 : MonoBehaviour
     {
         IniciarJuego();
         m_IsCorrectAnswer = new bool[10];
+
+        difficultyLevel = new List<(Tema, Dificultad)>
+        {
+            (Tema.Algebra, Dificultad.Facil),
+            (Tema.Algebra, Dificultad.Intermedio),
+            (Tema.Algebra, Dificultad.Dificil),
+            (Tema.Plsql, Dificultad.Facil),
+            (Tema.Plsql, Dificultad.Intermedio),
+            (Tema.Plsql, Dificultad.Dificil)
+        };
+        
+        SetCurrentLevel();
     }
 
 
     public void IniciarJuego()
     {
         questions = new List<PreguntaSO>();
+        
+        Debug.LogError("Dificultad: " + DataManager.Instance.Dificultad + " Tema: " + DataManager.Instance.Tema);
         questions = GetQuestions(DataManager.Instance.Dificultad, DataManager.Instance.Tema);
 
         // Aquí puedes añadir la lógica para iniciar el juego con la lista de preguntas seleccionadas
-        m_QuizUI.Start();
-        m_QuizUI.MostrarPregunta(questions[IndexPregunta]);
+        if (m_QuizUI != null)
+        {
+            m_QuizUI.Start();
+            m_QuizUI.MostrarPregunta(questions[IndexPregunta]);
+        }
     }
 
     public void SiguientePregunta(int indexButton)
@@ -81,9 +98,9 @@ public class GameManager2 : MonoBehaviour
         
         IndexPregunta++;
         
-        if (IndexPregunta >= questions.Count)
+        if (IndexPregunta >= 10)
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+            SceneManager.LoadScene("RouletteScene");
             IndexPregunta = 0;
         }
         
@@ -102,12 +119,14 @@ public class GameManager2 : MonoBehaviour
         {
             foreach (PreguntaSO pregunta in listPreguntas.BancoPreguntas)
             {
-                if (pregunta.dificultad == dificultad)
+                if (listPreguntas.dificultad == dificultad)
                 {
                     questionsByDifficulty.Add(pregunta);
                 }
             }
         }
+        
+        
         
         while (questionsByDifficulty.Count > 0)
         {
@@ -116,7 +135,28 @@ public class GameManager2 : MonoBehaviour
             questionsByDifficulty.RemoveAt(randomIndex);
         }
         
+        var randomQuestionsCopy = new List<PreguntaSO>(randomQuestions);
+        randomQuestions.Clear();
+        
+        for (int i = 0; i < 10; i++)
+        {
+            randomQuestions.Add(randomQuestionsCopy[i]);
+        }
+        
         return randomQuestions;
+    }
+
+    private void SetCurrentLevel()
+    {
+        // Hacer una busqueda dentro de la lista de difficultyLevel para encontrar el nivel actual, comparando con el DataManager.Instance.Tema y DataManager.Instance.Dificultad y luego asignar el valor a currentLevel con el índice encontrado
+        
+        for (int i = 0; i < difficultyLevel.Count; i++)
+        {
+            if (difficultyLevel[i].Item1 == DataManager.Instance.Tema && difficultyLevel[i].Item2 == DataManager.Instance.Dificultad)
+            {
+                currentLevel = i;
+            }
+        }
     }
 
     //probando github

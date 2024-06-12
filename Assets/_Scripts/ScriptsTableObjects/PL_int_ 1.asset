@@ -18,11 +18,11 @@ MonoBehaviour:
   - text_alternativa: Un tipo de variable
     Is_correct: 0
   - text_alternativa: Un puntero a una tabla
-    Is_correct: 0
-  - text_alternativa: Un mecanismo para manejar conjuntos de resultados de consultas
     Is_correct: 1
+  - text_alternativa: Un mecanismo para manejar conjuntos de resultados de consultas
+    Is_correct: 0
   - text_alternativa: Un tipo de dato compuesto
     Is_correct: 0
   dificultad: 1
   tema: 0
-  TipoPregunta: 4
+  tipoPregunta: 0

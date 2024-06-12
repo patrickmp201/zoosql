@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5120986f5141aa48a1101f3f18c7335, type: 3}
+  m_Name: BancoPreguntas_plsqlDif
+  m_EditorClassIdentifier: 
+  BancoPreguntas:
+  - {fileID: 11400000, guid: 6429a92850650104d900aeb7211e28cf, type: 2}
+  - {fileID: 11400000, guid: f3ba4c7fd31c0cf4c94ba94cf59f4994, type: 2}
+  - {fileID: 11400000, guid: 15c758dfc8d2fff43ab67842c9834caf, type: 2}
+  - {fileID: 11400000, guid: 4fee508a9994098478da22d1f1d4b5ee, type: 2}
+  - {fileID: 11400000, guid: 7704084d71ff3b546870cd22046cc18b, type: 2}
+  - {fileID: 11400000, guid: cef9647063913064590cc4b6ded3d25e, type: 2}
+  - {fileID: 11400000, guid: 0e21a24f67e2ea24c8de54fb329a884c, type: 2}
+  - {fileID: 11400000, guid: 7a43ef440ce9547428535ce04484d3a7, type: 2}
+  - {fileID: 11400000, guid: 8c21f556ad7740d41afb3bebee7e5e6d, type: 2}
+  - {fileID: 11400000, guid: 4c62bc20d478bab4284285eca5ab7c8e, type: 2}
+  dificultad: 2

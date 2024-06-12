@@ -19,11 +19,11 @@ MonoBehaviour:
   - text_alternativa: "Ejecutar c\xF3digo"
     Is_correct: 0
   - text_alternativa: Manejar excepciones
-    Is_correct: 0
-  - text_alternativa: Declarar variables y constantes
     Is_correct: 1
+  - text_alternativa: Declarar variables y constantes
+    Is_correct: 0
   - text_alternativa: Crear tablas
     Is_correct: 0
   dificultad: 0
   tema: 0
-  TipoPregunta: 0
+  tipoPregunta: 13

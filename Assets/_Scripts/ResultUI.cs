@@ -116,14 +116,16 @@ public class ResultUI : MonoBehaviour
 
         // Recorrer el diccionario results y mostrar los resultados en el UI
         var numberOfElements = Enum.GetValues(typeof(TipoPregunta)).Length;
-        for (var i = 0; i < numberOfElements; i++)
+        for (var i = 0; i < typeTexts.Count; i++)
         {
-            typeTexts[i].text = ((TipoPregunta)i).ToString();
+            var currentTypeQuestionKey = totalQuestionTypeDictionary.ElementAt(i).Key;
+            typeTexts[i].text = $"Tópico: {currentTypeQuestionKey}";
+            // typeTexts[i].text = $"{currentTypeQuestionKey}";
             var totalAnswersByQuestionType = "";
-            totalAnswersByQuestionType = totalQuestionTypeDictionary.ContainsKey(((TipoPregunta)i).ToString()) ? totalQuestionTypeDictionary[((TipoPregunta)i).ToString()].ToString() : "0";
+            totalAnswersByQuestionType = totalQuestionTypeDictionary.ContainsKey(currentTypeQuestionKey) ? totalQuestionTypeDictionary[currentTypeQuestionKey].ToString() : "1";
 
             var correctAnswersByQuestionType = "";
-            correctAnswersByQuestionType = correctQuestionTypeDictionary.ContainsKey(((TipoPregunta)i).ToString()) ? correctQuestionTypeDictionary[((TipoPregunta)i).ToString()].ToString() : "0";
+            correctAnswersByQuestionType = correctQuestionTypeDictionary.ContainsKey(currentTypeQuestionKey) ? correctQuestionTypeDictionary[currentTypeQuestionKey].ToString() : "0";
             
             valueTexts[i].text = $"{correctAnswersByQuestionType}/{totalAnswersByQuestionType}";
         }

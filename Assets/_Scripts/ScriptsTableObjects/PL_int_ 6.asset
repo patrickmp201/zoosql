@@ -17,14 +17,14 @@ MonoBehaviour:
   text_alternativas:
   - text_alternativa: "Un conjunto de instrucciones SQL que realiza una tarea espec\xEDfica
       y puede devolver valores"
-    Is_correct: 1
+    Is_correct: 0
   - text_alternativa: "Un conjunto de instrucciones SQL que realiza una tarea espec\xEDfica
       pero no devuelve valores"
-    Is_correct: 0
+    Is_correct: 1
   - text_alternativa: Una variable que almacena valores
     Is_correct: 0
   - text_alternativa: Un tipo de dato compuesto
     Is_correct: 0
   dificultad: 1
   tema: 0
-  TipoPregunta: 5
+  tipoPregunta: 0

@@ -18,10 +18,10 @@ MonoBehaviour:
   text_alternativas:
   - text_alternativa: "\u03C0_nombre (\u03C3_zona='A' (Cuidadores)) \u222A \u03C0_nombre
       (\u03C3_zona='B' (Cuidadores))"
-    Is_correct: 1
+    Is_correct: 0
   - text_alternativa: "\u03C0_nombre (\u03C3_zona='A' (Cuidadores)) \u2229 \u03C0_nombre
       (\u03C3_zona='B' (Cuidadores))"
-    Is_correct: 0
+    Is_correct: 1
   - text_alternativa: "\u03C0_nombre (\u03C3_zona='A' (Cuidadores)) - \u03C0_nombre
       (\u03C3_zona='B' (Cuidadores))"
     Is_correct: 0

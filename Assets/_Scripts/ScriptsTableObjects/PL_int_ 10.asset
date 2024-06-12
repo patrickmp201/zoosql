@@ -18,11 +18,11 @@ MonoBehaviour:
   - text_alternativa: INSERT
     Is_correct: 0
   - text_alternativa: UPDATE
-    Is_correct: 0
+    Is_correct: 1
   - text_alternativa: DELETE
     Is_correct: 0
   - text_alternativa: Todas las anteriores
-    Is_correct: 1
+    Is_correct: 0
   dificultad: 1
   tema: 0
-  TipoPregunta: 6
+  tipoPregunta: 0

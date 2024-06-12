@@ -19,11 +19,11 @@ MonoBehaviour:
   - text_alternativa: Declarativa
     Is_correct: 0
   - text_alternativa: Ejecutable
-    Is_correct: 0
+    Is_correct: 1
   - text_alternativa: Excepcional
     Is_correct: 0
   - text_alternativa: Operacional
-    Is_correct: 1
+    Is_correct: 0
   dificultad: 0
   tema: 0
-  TipoPregunta: 0
+  tipoPregunta: 0

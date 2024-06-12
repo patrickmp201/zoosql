@@ -16,13 +16,13 @@ MonoBehaviour:
   spr_pregunta: {fileID: 21300000, guid: b056589d92e352a478261a8b29a79170, type: 3}
   text_alternativas:
   - text_alternativa: IF condition THEN ... END IF
-    Is_correct: 1
-  - text_alternativa: IF condition ... END IF
     Is_correct: 0
+  - text_alternativa: IF condition ... END IF
+    Is_correct: 1
   - text_alternativa: IF (condition) { ... }
     Is_correct: 0
   - text_alternativa: IF condition THEN { ... } END
     Is_correct: 0
   dificultad: 0
   tema: 0
-  TipoPregunta: 2
+  tipoPregunta: 0

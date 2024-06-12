@@ -17,9 +17,9 @@ MonoBehaviour:
   spr_pregunta: {fileID: 21300000, guid: 9f9e4cc1d2e9c75468a072713a83328d, type: 3}
   text_alternativas:
   - text_alternativa: "\u03C0_edad (Animales)"
-    Is_correct: 1
-  - text_alternativa: "\u03C3_edad (Animales)"
     Is_correct: 0
+  - text_alternativa: "\u03C3_edad (Animales)"
+    Is_correct: 1
   - text_alternativa: "\u03C0_edad (Cuidadores)"
     Is_correct: 0
   - text_alternativa: "\u03C3_edad (Cuidadores)"

@@ -17,9 +17,9 @@ MonoBehaviour:
   spr_pregunta: {fileID: 21300000, guid: fa6556750c2fc07458e670fd6eb6df34, type: 3}
   text_alternativas:
   - text_alternativa: "\u03C0_nombre, tipo (Animales)"
-    Is_correct: 1
-  - text_alternativa: "\u03C3_nombre, tipo (Animales)"
     Is_correct: 0
+  - text_alternativa: "\u03C3_nombre, tipo (Animales)"
+    Is_correct: 1
   - text_alternativa: "\u03C0_nombre, tipo (Cuidadores)"
     Is_correct: 0
   - text_alternativa: "\u03C3_nombre, tipo (Visitantes)"

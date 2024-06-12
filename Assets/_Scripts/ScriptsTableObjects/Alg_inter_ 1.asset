@@ -17,9 +17,9 @@ MonoBehaviour:
   spr_pregunta: {fileID: 21300000, guid: e0c45d3569bd71843a4912fc9d427f7f, type: 3}
   text_alternativas:
   - text_alternativa: "\u03C0_nombre (Cuidadores) \u222A \u03C0_nombre (Animales)"
-    Is_correct: 1
-  - text_alternativa: "\u03C0_nombre (Cuidadores) \u2A1D \u03C0_nombre (Animales)"
     Is_correct: 0
+  - text_alternativa: "\u03C0_nombre (Cuidadores) \u2A1D \u03C0_nombre (Animales)"
+    Is_correct: 1
   - text_alternativa: "\u03C0_nombre (Cuidadores) \xD7 \u03C0_nombre (Animales)"
     Is_correct: 0
   - text_alternativa: "\u03C0_nombre (Cuidadores) - \u03C0_nombre (Animales)"

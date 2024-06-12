@@ -18,11 +18,11 @@ MonoBehaviour:
   - text_alternativa: "Una instrucci\xF3n SQL \xFAnica"
     Is_correct: 0
   - text_alternativa: 'Un conjunto de instrucciones SQL '
-    Is_correct: 0
-  - text_alternativa: Una estructura que contiene declaraciones, sentencias y excepciones
     Is_correct: 1
+  - text_alternativa: Una estructura que contiene declaraciones, sentencias y excepciones
+    Is_correct: 0
   - text_alternativa: Una tabla en una base de datos
     Is_correct: 0
   dificultad: 0
   tema: 0
-  TipoPregunta: 0
+  tipoPregunta: 14

@@ -19,11 +19,11 @@ MonoBehaviour:
   - text_alternativa: IF-THEN-ELSE
     Is_correct: 0
   - text_alternativa: SWITCH-CASE
-    Is_correct: 0
-  - text_alternativa: CASE-WHEN
     Is_correct: 1
+  - text_alternativa: CASE-WHEN
+    Is_correct: 0
   - text_alternativa: WHEN-THEN
     Is_correct: 0
   dificultad: 0
   tema: 0
-  TipoPregunta: 2
+  tipoPregunta: 0

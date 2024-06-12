@@ -18,11 +18,11 @@ MonoBehaviour:
   - text_alternativa: VARIABLE nombre TIPO
     Is_correct: 0
   - text_alternativa: FUNCTION nombre TIPO
-    Is_correct: 0
-  - text_alternativa: DECLARE nombre TIPO
     Is_correct: 1
+  - text_alternativa: DECLARE nombre TIPO
+    Is_correct: 0
   - text_alternativa: LET nombre = TIPO
     Is_correct: 0
   dificultad: 0
   tema: 0
-  TipoPregunta: 0
+  tipoPregunta: 15

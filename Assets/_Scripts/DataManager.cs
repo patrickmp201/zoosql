@@ -6,8 +6,12 @@ public class DataManager : MonoBehaviour
 {
     //set privado get publico
     public static DataManager Instance { private set; get; }
+    [field: SerializeField]
     public Dificultad Dificultad { get; set; }
+    [field: SerializeField]
     public Tema Tema { get; set; }
+    
+    
 
 
     //Se llama cuando un objeto es cargado en memoria, se ejecuta cuando esta cargando el juego

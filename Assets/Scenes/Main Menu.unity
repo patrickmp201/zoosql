@@ -205,7 +205,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 164411440}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 164411442}
+        m_TargetAssemblyTypeName: OpcionesBoton, Assembly-CSharp
+        m_MethodName: SetDificultad
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 365182186}
+        m_TargetAssemblyTypeName: SceneLoadManager, Assembly-CSharp
+        m_MethodName: ChangeScene
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Scene1
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &164411440
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -256,10 +280,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 891f6ef78d451e240835a45e7dda1888, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  button: {fileID: 0}
-  text: {fileID: 0}
   EleccionDificultad: 0
-  IsTema: 0
   tema: 0
 --- !u!1 &177388024
 GameObject:
@@ -693,7 +714,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 489846169}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 489846171}
+        m_TargetAssemblyTypeName: OpcionesBoton, Assembly-CSharp
+        m_MethodName: SetDificultad
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 365182186}
+        m_TargetAssemblyTypeName: SceneLoadManager, Assembly-CSharp
+        m_MethodName: ChangeScene
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Scene1
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &489846169
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -744,10 +789,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 891f6ef78d451e240835a45e7dda1888, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  button: {fileID: 0}
-  text: {fileID: 0}
   EleccionDificultad: 1
-  IsTema: 0
   tema: 0
 --- !u!1 &554491305
 GameObject:
@@ -1215,8 +1257,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d03d7a9c70a5ef841a9863ee2281fd0d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dificultad: 0
-  tema: 1
 --- !u!1 &1062223484
 GameObject:
   m_ObjectHideFlags: 0
@@ -1361,6 +1401,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1192972216}
+        m_TargetAssemblyTypeName: OpcionesBoton, Assembly-CSharp
+        m_MethodName: SetTema
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1192972214
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1411,10 +1463,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 891f6ef78d451e240835a45e7dda1888, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  button: {fileID: 0}
-  text: {fileID: 0}
   EleccionDificultad: 0
-  IsTema: 1
   tema: 1
 --- !u!1 &1399378907
 GameObject:
@@ -2113,6 +2162,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1550492323}
+        m_TargetAssemblyTypeName: OpcionesBoton, Assembly-CSharp
+        m_MethodName: SetTema
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1550492321
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2163,10 +2224,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 891f6ef78d451e240835a45e7dda1888, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  button: {fileID: 0}
-  text: {fileID: 0}
   EleccionDificultad: 0
-  IsTema: 1
   tema: 0
 --- !u!1 &1618509469
 GameObject:
@@ -2757,7 +2815,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1982289420}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1982289422}
+        m_TargetAssemblyTypeName: OpcionesBoton, Assembly-CSharp
+        m_MethodName: SetDificultad
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 365182186}
+        m_TargetAssemblyTypeName: SceneLoadManager, Assembly-CSharp
+        m_MethodName: ChangeScene
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Scene1
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1982289420
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2808,10 +2890,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 891f6ef78d451e240835a45e7dda1888, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  button: {fileID: 0}
-  text: {fileID: 0}
   EleccionDificultad: 2
-  IsTema: 0
   tema: 0
 --- !u!1 &2029569384
 GameObject:

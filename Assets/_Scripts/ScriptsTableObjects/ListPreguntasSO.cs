@@ -7,6 +7,5 @@ public class ListPreguntasSO : ScriptableObject
 {
 
     public List<PreguntaSO> BancoPreguntas;
-    public TipoPregunta TipoPregunta;
-    public Tema tema;
+    public Dificultad dificultad;
 }

@@ -20,9 +20,9 @@ MonoBehaviour:
   - text_alternativa: "\u03C0_nombre (Animales)"
     Is_correct: 0
   - text_alternativa: "\u03C3_nombre (Cuidadores)"
-    Is_correct: 0
-  - text_alternativa: "\u03C0_nombre (Cuidadores)"
     Is_correct: 1
+  - text_alternativa: "\u03C0_nombre (Cuidadores)"
+    Is_correct: 0
   - text_alternativa: "\u03C3_nombre (Animales)"
     Is_correct: 0
   dificultad: 0

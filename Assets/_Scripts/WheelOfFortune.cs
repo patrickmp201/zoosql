@@ -174,16 +174,19 @@ namespace _Scripts
             var correctAnswer = GameManager2.Instance.m_IsCorrectAnswer[9 - selectedSegmentIndex];
             if (correctAnswer)
             {
-                DataManager.Instance.Dificultad = Dificultad.Intermedio;
-                DataManager.Instance.Tema = Tema.Algebra;
-                Debug.Log("Respuesta Correcto, Dificultad: Intermedio, Tema: Algebra");
+                GameManager2.Instance.currentLevel++;
+                DataManager.Instance.Tema = GameManager2.Instance.difficultyLevel[GameManager2.Instance.currentLevel].Item1;
+                DataManager.Instance.Dificultad = GameManager2.Instance.difficultyLevel[GameManager2.Instance.currentLevel].Item2;
+                
+                Debug.LogError("Correct answer! Current level: " + GameManager2.Instance.currentLevel);
             }
             else
             {
                 // Si el segmento seleccionado tiene el sprite de respuesta incorrecta, retrocede al nivel anterior
-                DataManager.Instance.Dificultad = Dificultad.Facil;
-                DataManager.Instance.Tema = Tema.Algebra;
-                Debug.Log("Respuesta Incorrecto, Dificultad: Facil, Tema: Algebra");
+                DataManager.Instance.Tema = GameManager2.Instance.difficultyLevel[GameManager2.Instance.currentLevel].Item1;
+                DataManager.Instance.Dificultad = GameManager2.Instance.difficultyLevel[GameManager2.Instance.currentLevel].Item2;
+                
+                Debug.LogError("Incorrect answer! Current level: " + GameManager2.Instance.currentLevel);
             }
             sequence.Kill();
             // SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);

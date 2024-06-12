@@ -227,6 +227,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d03d7a9c70a5ef841a9863ee2281fd0d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  <Dificultad>k__BackingField: 0
+  <Tema>k__BackingField: 0
 --- !u!4 &156739942
 Transform:
   m_ObjectHideFlags: 0
@@ -966,55 +968,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1217773427}
   m_CullTransparentMesh: 1
---- !u!1 &1274140423
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1274140425}
-  - component: {fileID: 1274140424}
-  m_Layer: 0
-  m_Name: PreguntasManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1274140424
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1274140423}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 75316516557c55a489bd9e2a24f21f35, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ListaPreguntasPlSQL:
-  - {fileID: 11400000, guid: cd5b334c2e0def142bb18c0d5116730c, type: 2}
-  ListaPreguntasAlgebra:
-  - {fileID: 11400000, guid: d1232eefe18b6f9499e645a9580f24f3, type: 2}
-  PreguntasRonda: 10
---- !u!4 &1274140425
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1274140423}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.789572, y: -2.2246344, z: -0.06563526}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1320931658
 GameObject:
   m_ObjectHideFlags: 0
@@ -1530,11 +1483,13 @@ MonoBehaviour:
   bdQuestionsAlgebra:
   - {fileID: 11400000, guid: d1232eefe18b6f9499e645a9580f24f3, type: 2}
   - {fileID: 11400000, guid: ab6ef6638c988fe45a0bf5d636d93a98, type: 2}
+  - {fileID: 11400000, guid: d5b4a338c9d357141a2e531bf761539d, type: 2}
   bdQuestionsPlSQL:
-  - {fileID: 11400000, guid: d1232eefe18b6f9499e645a9580f24f3, type: 2}
+  - {fileID: 11400000, guid: cd5b334c2e0def142bb18c0d5116730c, type: 2}
+  - {fileID: 11400000, guid: 89922f8df237dd848978bb40ce7cd913, type: 2}
+  - {fileID: 11400000, guid: e85a13db4360e2a4f962018e7dcc4592, type: 2}
   questions: []
-  m_tema: 0
-  m_dificultad: 0
+  currentLevel: 0
   m_correctAnswerSprite: {fileID: 21300000, guid: c4fa6abda9d2ce547a3cb4b21e23eda1, type: 3}
   m_incorrectAnswerSprite: {fileID: 21300000, guid: cdcbe6f5c9e0a5047af760221679072d, type: 3}
   m_pointsBar:
@@ -2733,7 +2688,6 @@ SceneRoots:
   - {fileID: 976840525}
   - {fileID: 731739186}
   - {fileID: 1621216080}
-  - {fileID: 1274140425}
   - {fileID: 1424384726}
   - {fileID: 156739942}
   - {fileID: 626625781}
